@@ -55,3 +55,24 @@ function addToBasket(id) {
 window.onload = ()=>{
     getproducts()
 }
+
+
+
+
+
+const submit = document.getElementById('myFORM');
+const girisugurluDiv = document.querySelector('.girisugurlu');
+
+function axiosPost(event) {
+  event.preventDefault();
+  axios.post("https://655c30a1ab37729791aa03c7.mockapi.io/fi/products", {
+    ad: nameinput.value,
+    phone: phoneinput.value,
+    email: emailinput.value
+  }).then(res => {
+    console.log(res);
+    
+  });
+}
+
+myFORM.addEventListener('submit', axiosPost)

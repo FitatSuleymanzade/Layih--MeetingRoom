@@ -4,120 +4,62 @@
   box-sizing: border-box;
 }
 
-#apisection .divbtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20px;
+header {
+  width: 100%;
 }
-#apisection .divbtn #btn {
-  font-size: 15px;
-  background-color: black;
-  color: white;
-  font-weight: bolder;
-  padding: 10px;
-  border: none;
-}
-#apisection .divbtn #btn:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  transition: 0.5s;
-}
-#apisection .container {
-  width: 95%;
-}
-#apisection .container .row {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding: 30px;
-}
-#apisection .container .row .apitext {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 30px;
-}
-#apisection .container .row .apitext h2 {
-  font-size: 35px;
-  padding: 20px;
-  font-weight: 800;
-}
-#apisection .container .row .apitext span {
-  color: grey;
-  font-size: 18px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-#apisection .container .row .apitext p {
-  padding: 20px;
-  color: grey;
-  font-size: 17px;
-}
-#apisection .container .row .buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header .collapseDiv ul {
+  margin: auto;
+  justify-content: space-between;
   gap: 10px;
-  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 600;
 }
-#apisection .container .row .buttons input {
-  width: 90px;
-  height: 33px;
-  padding-left: 20px;
-  border: 1px solid black;
-  outline: none;
-}
-#apisection .container .row .buttons input #inpp {
-  padding: 10px;
-}
-#apisection .container .row .buttons button {
-  font-size: 15px;
-  background-color: black;
-  color: white;
-  font-weight: bolder;
-  padding: 5px;
-  border: none;
-  margin-left: -10px;
-}
-#apisection .container .row .buttons button button:hover {
-  background-color: white;
-  color: black;
-}
-#apisection .container .row .buttons button:hover {
-  background-color: rgb(255, 255, 255);
-  color: #000000;
-  transition: 0.5s;
-}
-#apisection .container .row #apidiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 5px;
-  border-radius: 10px;
-}
-#apisection .container .row #apidiv .boxDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 0.5px solid #414040;
-  border-radius: 10px;
+
+#MeetingAndConference {
+  width: 100%;
+  height: 500px;
+  background-image: url(/img/hero-bg.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
   padding: 30px;
-  text-align: center;
 }
-#apisection .container .row #apidiv .boxDiv .addtobasketbtn {
-  font-size: 15px;
-  background-color: black;
+#MeetingAndConference .container .meetingText {
+  padding: 30px;
   color: white;
-  border-radius: 5px;
-  font-weight: bolder;
-  padding: 10px;
-  border: none;
 }
-#apisection .container .row #apidiv .boxDiv .addtobasketbtn:hover {
-  background-color: white;
-  color: #000000;
-  transition: 0.5s;
+#MeetingAndConference .container .meetingText h1 {
+  font-size: 40px;
+  padding-top: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#MeetingAndConference .container .meetingText p {
+  font-size: 20px;
+  padding-top: 10px;
+}
+#MeetingAndConference .container .meetingText .buttonDiv {
+  padding-top: 30px;
+}
+#MeetingAndConference .container .meetingText .buttonDiv button {
+  padding: 15px 30px 15px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 5px #3DB554, 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#MeetingAndConference .container .meetingText .buttonDiv button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 25px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+#MeetingAndConference .container .meetingText .divIcon {
+  padding-top: 30px;
+  margin-top: 30px;
+  padding-left: 15px;
+  display: flex;
+  gap: 10px;
+}
+#MeetingAndConference .container .meetingImg {
+  padding: 30px;
 }
