@@ -19,6 +19,7 @@ header .collapseDiv ul {
   width: 100%;
   height: 500px;
   background-image: url(/img/hero-bg.jpg);
+  background-attachment: fixed;
   max-width: 100%;
   background-position: center;
   background-size: cover;
@@ -62,4 +63,233 @@ header .collapseDiv ul {
 }
 #MeetingAndConference .container .meetingImg {
   padding: 30px;
+}
+
+#MakeYourWorkplace {
+  width: 100%;
+}
+#MakeYourWorkplace .container .row .workplaceText {
+  padding: 30px;
+  text-align: center;
+}
+#MakeYourWorkplace .container .row .workplaceText h5 {
+  color: grey;
+  font-weight: 400;
+  padding-top: 10px;
+}
+#MakeYourWorkplace .container .row .workplaceText h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(255, 136, 0);
+}
+#MakeYourWorkplace .container .row .workplaceImg {
+  padding: 30px;
+}
+#MakeYourWorkplace .container .row .workplaceImg img {
+  max-width: 100%;
+}
+#MakeYourWorkplace .container .row .workplaceImg p {
+  text-align: center;
+  padding-top: 10px;
+}
+#MakeYourWorkplace .container .row .workplaceButton {
+  text-align: center;
+  padding-bottom: 30px;
+}
+#MakeYourWorkplace .container .row .workplaceButton button {
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px 15px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(255, 136, 0);
+  box-shadow: 0 0 5pxrgb 255, 136, 0, 0 0 25px rgb(255, 136, 0);
+  color: white;
+  font-weight: 500;
+}
+#MakeYourWorkplace .container .row .workplaceButton button:hover {
+  box-shadow: 0 0 5px rgb(255, 136, 0), 0 0 25px rgb(255, 136, 0), 0 0 50px rgb(255, 136, 0);
+  transition: 0.2s;
+}
+
+#BookYourMeeting {
+  width: 100%;
+  background-color: #F7F8F9;
+}
+#BookYourMeeting .container .row .meetingtext {
+  padding: 30px;
+  text-align: center;
+}
+#BookYourMeeting .container .row .meetingtext h2 {
+  padding-top: 30px;
+  color: rgb(255, 136, 0);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#BookYourMeeting .container .row .meetingtext h5 {
+  color: grey;
+  font-weight: 400;
+}
+#BookYourMeeting .container .row .meetingRow {
+  text-align: center;
+}
+#BookYourMeeting .container .row .meetingRow h4 {
+  padding-top: 20px;
+  color: rgb(255, 136, 0);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#BookYourMeeting .container .row .meetingRow p {
+  padding-top: 10px;
+}
+#BookYourMeeting .container .row .meetingRow img {
+  max-width: 40%;
+}
+#BookYourMeeting .container .row .meetButton {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#BookYourMeeting .container .row .meetButton button {
+  padding: 15px 30px 15px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 5px #3DB554, 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#BookYourMeeting .container .row .meetButton button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 25px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+
+#tableSec {
+  width: 100%;
+  background-color: #F7F8F9;
+}
+#tableSec .container .row .tableSecImg {
+  padding-top: 30px;
+}
+#tableSec .container .row .tableSecImg img {
+  max-width: 100%;
+}
+
+#optimizeYourMeeting {
+  width: 100%;
+  background-color: #F7F8F9;
+  padding-bottom: 30px;
+}
+#optimizeYourMeeting .container .row .optimizeText {
+  text-align: center;
+  padding: 30px;
+}
+#optimizeYourMeeting .container .row .optimizeText h2 {
+  padding-top: 20px;
+  color: rgb(255, 136, 0);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#optimizeYourMeeting .container .row .optimizeText h5 {
+  color: grey;
+  font-weight: 400;
+  padding-top: 10px;
+}
+#optimizeYourMeeting .container .row .optimizeRow {
+  text-align: center;
+}
+#optimizeYourMeeting .container .row .optimizeRow h4 {
+  color: #3DB554;
+  padding-bottom: 20px;
+}
+#optimizeYourMeeting .container .row .optimizeRow p {
+  color: rgb(102, 102, 102);
+}
+#optimizeYourMeeting .container .row .bonsaiImg {
+  padding-top: 30px;
+}
+#optimizeYourMeeting .container .row .bonsaiImg img {
+  padding-top: 30px;
+  max-width: 100%;
+}
+
+#securityAndconnectivity {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #F6F7F8;
+}
+#securityAndconnectivity .container .row .securityText {
+  text-align: center;
+}
+#securityAndconnectivity .container .row .securityText h2 {
+  padding-top: 20px;
+  color: rgb(255, 136, 0);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#securityAndconnectivity .container .row .securityText h5 {
+  color: grey;
+  padding-top: 10px;
+  font-weight: 400;
+}
+#securityAndconnectivity .container .row .securityImg {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#securityAndconnectivity .container .row .securityImg img {
+  max-width: 30%;
+}
+#securityAndconnectivity .container .row .connectivityImg img {
+  max-width: 100%;
+}
+#securityAndconnectivity .container .row .yourData {
+  padding-top: 30px;
+  margin-top: 30px;
+}
+#securityAndconnectivity .container .row .yourData h3 {
+  color: #3DB554;
+  padding-bottom: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#securityAndconnectivity .container .row h5 {
+  color: grey;
+  padding-bottom: 30px;
+  font-weight: 300;
+}
+#securityAndconnectivity .container .row .dataDiv {
+  padding-bottom: 20px;
+}
+#securityAndconnectivity .container .row span {
+  font-size: 12px;
+  color: rgb(117, 117, 117);
+  font-weight: 700;
+}
+
+#FlexibleIntegration {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #F6F7F8;
+}
+#FlexibleIntegration .container .row .flexibleText h3 {
+  padding-top: 20px;
+  color: rgb(255, 136, 0);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#FlexibleIntegration .container .row .flexibleText h4 {
+  color: grey;
+  padding-top: 10px;
+  font-weight: 300;
+}
+#FlexibleIntegration .container .row .flexibleText p {
+  padding-top: 30px;
+}
+#FlexibleIntegration .container .row .flexibleText span {
+  font-size: 12px;
+  color: rgb(117, 117, 117);
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+#FlexibleIntegration .container .row .flexibleText .logoImg {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 25px;
+}
+#FlexibleIntegration .container .row .flexibleText .logoImg img {
+  max-width: 20%;
 }
