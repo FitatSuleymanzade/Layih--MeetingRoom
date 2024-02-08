@@ -32,7 +32,7 @@ header .collapseDiv ul {
 #MeetingAndConference .container .meetingText h1 {
   font-size: 40px;
   padding-top: 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #MeetingAndConference .container .meetingText p {
   font-size: 20px;
@@ -78,7 +78,7 @@ header .collapseDiv ul {
   padding-top: 10px;
 }
 #MakeYourWorkplace .container .row .workplaceText h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: rgb(255, 136, 0);
 }
 #MakeYourWorkplace .container .row .workplaceImg {
@@ -102,7 +102,7 @@ header .collapseDiv ul {
   border: none;
   border-radius: 30px;
   background-color: rgb(255, 136, 0);
-  box-shadow: 0 0 5pxrgb 255, 136, 0, 0 0 25px rgb(255, 136, 0);
+  box-shadow: 0 0 5px rgb(255, 136, 0), 0 0 25px rgb(255, 136, 0);
   color: white;
   font-weight: 500;
 }
@@ -122,7 +122,7 @@ header .collapseDiv ul {
 #BookYourMeeting .container .row .meetingtext h2 {
   padding-top: 30px;
   color: rgb(255, 136, 0);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #BookYourMeeting .container .row .meetingtext h5 {
   color: grey;
@@ -134,7 +134,7 @@ header .collapseDiv ul {
 #BookYourMeeting .container .row .meetingRow h4 {
   padding-top: 20px;
   color: rgb(255, 136, 0);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #BookYourMeeting .container .row .meetingRow p {
   padding-top: 10px;
@@ -184,7 +184,7 @@ header .collapseDiv ul {
 #optimizeYourMeeting .container .row .optimizeText h2 {
   padding-top: 20px;
   color: rgb(255, 136, 0);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #optimizeYourMeeting .container .row .optimizeText h5 {
   color: grey;
@@ -220,7 +220,7 @@ header .collapseDiv ul {
 #securityAndconnectivity .container .row .securityText h2 {
   padding-top: 20px;
   color: rgb(255, 136, 0);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #securityAndconnectivity .container .row .securityText h5 {
   color: grey;
@@ -244,7 +244,7 @@ header .collapseDiv ul {
 #securityAndconnectivity .container .row .yourData h3 {
   color: #3DB554;
   padding-bottom: 15px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #securityAndconnectivity .container .row h5 {
   color: grey;
@@ -268,7 +268,7 @@ header .collapseDiv ul {
 #FlexibleIntegration .container .row .flexibleText h3 {
   padding-top: 20px;
   color: rgb(255, 136, 0);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #FlexibleIntegration .container .row .flexibleText h4 {
   color: grey;
@@ -292,4 +292,157 @@ header .collapseDiv ul {
 }
 #FlexibleIntegration .container .row .flexibleText .logoImg img {
   max-width: 20%;
+}
+
+#meetingApp {
+  width: 100%;
+  background-color: #F6F7F8;
+}
+#meetingApp .container .row .appText {
+  text-align: center;
+  padding: 30px;
+}
+#meetingApp .container .row .appText h2 {
+  color: #3DB554;
+  padding-bottom: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#meetingApp .container .row .appImg {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 30px;
+}
+#meetingApp .container .row .appImg img {
+  max-width: 100%;
+}
+
+#trustedByThousands {
+  width: 100%;
+}
+#trustedByThousands .container .row .trusted {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#trustedByThousands .container .row .trusted h3 {
+  font-weight: 200;
+  padding-top: 20px;
+  color: rgb(255, 136, 0);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#trustedByThousands .container .row .petrValenta {
+  padding-bottom: 30px;
+  text-align: center;
+}
+#trustedByThousands .container .row .petrValenta .petrValentaImg {
+  padding: 20px;
+}
+#trustedByThousands .container .row .petrValenta .petrValentaImg img {
+  max-width: 30%;
+}
+#trustedByThousands .container .row .petrValenta p {
+  font-weight: 600;
+  margin-top: 5px;
+}
+#trustedByThousands .container .row .petrValenta span {
+  text-align: center;
+  color: grey;
+}
+#trustedByThousands .container .row .IlpoLehtola {
+  padding-bottom: 30px;
+  text-align: center;
+}
+#trustedByThousands .container .row .IlpoLehtola .IlpoLehtolaImg {
+  padding: 20px;
+}
+#trustedByThousands .container .row .IlpoLehtola .IlpoLehtolaImg img {
+  max-width: 30%;
+}
+#trustedByThousands .container .row .IlpoLehtola p {
+  font-weight: 600;
+  margin-top: 5px;
+}
+#trustedByThousands .container .row .IlpoLehtola span {
+  text-align: center;
+  color: grey;
+}
+#trustedByThousands .container .row .ZsoltTompe {
+  padding-bottom: 30px;
+  text-align: center;
+}
+#trustedByThousands .container .row .ZsoltTompe .ZsoltTompeImg {
+  padding: 20px;
+}
+#trustedByThousands .container .row .ZsoltTompe .ZsoltTompeImg img {
+  max-width: 30%;
+}
+#trustedByThousands .container .row .ZsoltTompe p {
+  font-weight: 600;
+  margin-top: 5px;
+}
+#trustedByThousands .container .row .ZsoltTompe span {
+  text-align: center;
+  color: grey;
+}
+
+#AvatarSec {
+  width: 100%;
+}
+#AvatarSec .container .row .avatarIcon img {
+  max-width: 100%;
+  padding: 20px;
+}
+
+#formSec {
+  width: 100%;
+}
+#formSec .container .row .formrow {
+  text-align: center;
+}
+#formSec .container .row .MyForm {
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  margin: auto;
+  transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
+}
+#formSec .container .row .MyForm #contactForm {
+  display: flex;
+  flex-direction: column;
+}
+#formSec .container .row .MyForm input {
+  padding: 5px;
+}
+#formSec .container .row .MyForm textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+#formSec .container .row .MyForm button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#formSec .container .row .MyForm button:hover {
+  background-color: #45a049;
+}
+#formSec .container .row .MyForm:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#formSec .container .row .MyForm:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#formSec .container .row p {
+  padding-top: 30px;
+  text-align: center;
+  color: grey;
+  padding-bottom: 30px;
 }
