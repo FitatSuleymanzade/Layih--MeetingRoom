@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -396,16 +397,31 @@ header .collapseDiv ul {
 
 #formSec {
   width: 100%;
+  background-image: url(/img/help-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 #formSec .container .row .formrow {
   text-align: center;
+  padding: 30px;
+}
+#formSec .container .row .formrow h1 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+}
+#formSec .container .row .formrow h5 {
+  color: white;
+  font-weight: 400;
 }
 #formSec .container .row .MyForm {
   align-items: center;
   justify-content: center;
+  background-color: #fff;
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid grey;
+  padding-top: 20px;
   width: 40%;
   margin: auto;
   transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
@@ -413,24 +429,40 @@ header .collapseDiv ul {
 #formSec .container .row .MyForm #contactForm {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 #formSec .container .row .MyForm input {
   padding: 5px;
+  outline: none;
+  height: 35px;
+  width: auto;
+  border-radius: 5px;
+  border: 0.2px solid grey;
 }
 #formSec .container .row .MyForm textarea {
   padding: 8px;
   margin-bottom: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: 0.2px solid grey;
 }
-#formSec .container .row .MyForm button {
-  background-color: #4caf50;
-  color: #fff;
-  padding: 10px;
+#formSec .container .row .MyForm .formbtn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#formSec .container .row .MyForm .formbtn button {
+  padding: 15px 10px 15px 10px;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
 }
-#formSec .container .row .MyForm button:hover {
-  background-color: #45a049;
+#formSec .container .row .MyForm .formbtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
 }
 #formSec .container .row .MyForm:hover {
   transform: translateY(-5px) scale(1.05);
@@ -443,6 +475,265 @@ header .collapseDiv ul {
 #formSec .container .row p {
   padding-top: 30px;
   text-align: center;
-  color: grey;
+  color: rgb(255, 255, 255);
   padding-bottom: 30px;
+}
+
+#appsMoreHelp {
+  width: 100%;
+}
+#appsMoreHelp .container .row .more h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .more p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .more a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+#appsMoreHelp .container .row .more .more a:hover {
+  text-decoration: underline;
+  /* Hover durumunda alt çizgiyi ekler */
+}
+#appsMoreHelp .container .row .helps h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .helps p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .helps a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+#appsMoreHelp .container .row .helps .more a:hover {
+  text-decoration: underline;
+  /* Hover durumunda alt çizgiyi ekler */
+}
+#appsMoreHelp .container .row .icon {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* İkonları yatayda hizala */
+  gap: 20px;
+}
+#appsMoreHelp .container .row .icon i {
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .icon a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+
+footer {
+  width: 100%;
+}
+footer .container .row .footerRow ul {
+  list-style: none;
+  /* Liste işaretini kaldır */
+  padding: 0;
+  /* Liste içi boşluğu sıfırla */
+  margin: 0;
+  /* Liste kenar boşluğunu sıfırla */
+  display: flex;
+  /* Liste öğelerini yan yana sırala */
+  gap: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .collapseDiv ul {
+  margin: auto;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#modernMeeting {
+  width: 100%;
+  height: 400px;
+  background-image: url(/img/product-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: cover;
+}
+#modernMeeting .container .row .modernMeetingText {
+  padding-top: 30px;
+}
+#modernMeeting .container .row .modernMeetingText h3 {
+  color: white;
+  padding-top: 30px;
+}
+#modernMeeting .container .row .modernMeetingText h5 {
+  color: rgb(189, 189, 189);
+  padding-top: 20px;
+  font-weight: 200;
+}
+#modernMeeting .container .row .modernMeetingText .modernButton {
+  text-align: center;
+  padding-top: 30px;
+}
+#modernMeeting .container .row .modernMeetingText .modernButton button {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(255, 136, 0);
+  box-shadow: 0 0 25px rgb(255, 136, 0);
+  color: white;
+  font-weight: 500;
+}
+#modernMeeting .container .row .modernMeetingText .modernButton button:hover {
+  box-shadow: 0 0 5px rgb(255, 136, 0), 0 0 50px rgb(255, 136, 0);
+  transition: 0.2s;
+}
+#modernMeeting .container .row .modernMeetingImg {
+  padding-top: 30px;
+}
+#modernMeeting .container .row .modernMeetingImg img {
+  padding-top: 30px;
+  max-width: 100%;
+}
+
+#cloudOnprem {
+  width: 100%;
+}
+#cloudOnprem .container .row .cloudText {
+  text-align: center;
+  padding-top: 30px;
+}
+#cloudOnprem .container .row .cloudText h4 {
+  color: #3DB554;
+  font-weight: 200;
+}
+#cloudOnprem .container .row .cloudLogo {
+  text-align: center;
+}
+#cloudOnprem .container .row .cloudLogo img {
+  max-width: 30%;
+  padding: 20px;
+}
+#cloudOnprem .container .row .cloudLogo h3 {
+  color: #33495C;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+#cloudOnprem .container .row .cloudLogo p {
+  color: #33495C;
+}
+#cloudOnprem .container .row .cloudLogo .divIcon {
+  padding-top: 20px;
+  margin: 20px;
+  justify-content: space-between;
+}
+#cloudOnprem .container .row .buttonDiv {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+#cloudOnprem .container .row .buttonDiv button {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#cloudOnprem .container .row .buttonDiv button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+
+#basicSmart {
+  width: 100%;
+}
+#basicSmart .container .row .basicSmartText {
+  text-align: center;
+}
+
+#regSec {
+  width: 100%;
+  height: 600px;
+  background-image: url(/img/hero-bg.jpg);
+  background-attachment: fixed;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+}
+#regSec .container .row .regImg {
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#regSec .container .row .regImg img {
+  max-width: 100%;
+  padding-top: 30px;
+}
+#regSec .container .row #registerForm {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  border-radius: 30px;
+}
+#regSec .container .row #registerForm select {
+  border-radius: 10px;
+  outline: none;
+  padding: 8px;
+}
+#regSec .container .row #registerForm input {
+  padding: 5px;
+  outline: none;
+  height: 35px;
+  width: auto;
+  border-radius: 10px;
+  border: 0.2px solid grey;
+  display: flex;
+  gap: 20px;
+}
+#regSec .container .row #registerForm input #companyName {
+  padding-top: 80px;
+}
+#regSec .container .row .formbtn {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#regSec .container .row .formbtn button {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#regSec .container .row .formbtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
 }
