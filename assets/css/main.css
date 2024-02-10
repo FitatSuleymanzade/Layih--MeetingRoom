@@ -65,6 +65,10 @@ header .collapseDiv ul {
 #MeetingAndConference .container .meetingImg {
   padding: 30px;
 }
+#MeetingAndConference .container .meetingImg img {
+  max-width: 100%;
+  transition: transform 0.9s ease;
+}
 
 #MakeYourWorkplace {
   width: 100%;
@@ -87,6 +91,7 @@ header .collapseDiv ul {
 }
 #MakeYourWorkplace .container .row .workplaceImg img {
   max-width: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 #MakeYourWorkplace .container .row .workplaceImg p {
   text-align: center;
@@ -142,6 +147,7 @@ header .collapseDiv ul {
 }
 #BookYourMeeting .container .row .meetingRow img {
   max-width: 40%;
+  transition: transform 0.3s ease-in-out;
 }
 #BookYourMeeting .container .row .meetButton {
   text-align: center;
@@ -266,155 +272,189 @@ header .collapseDiv ul {
   padding-top: 30px;
   background-color: #F6F7F8;
 }
-#FlexibleIntegration .container .row .flexibleText h3 {
+#FlexibleIntegration .container .row .flexibleImg {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  background-color: red;
+}
+#FlexibleIntegration .container .row .flexibleImg #imageSlider img {
+  max-width: 100%;
+}
+#FlexibleIntegration .container .row .flexibleImg #prevBtn,
+#FlexibleIntegration .container .row .flexibleImg #nextBtn {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border: none;
+  background-color: transparent;
+}
+#FlexibleIntegration .container .row .flexibleImg #prevBtn:hover, #FlexibleIntegration .container .row .flexibleImg #nextBtn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#FlexibleIntegration .container .row .flexibleImg .detailButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 136, 0);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#FlexibleIntegration .container .row .flexibleImg .detailButton:hover {
+  background-color: rgba(255, 136, 0, 0.8);
+}
+#FlexibleIntegration .container .row .flexibleImg .flexibleText h3 {
   padding-top: 20px;
   color: rgb(255, 136, 0);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-#FlexibleIntegration .container .row .flexibleText h4 {
+#FlexibleIntegration .container .row .flexibleImg .flexibleText h4 {
   color: grey;
   padding-top: 10px;
   font-weight: 300;
 }
-#FlexibleIntegration .container .row .flexibleText p {
+#FlexibleIntegration .container .row .flexibleImg .flexibleText p {
   padding-top: 30px;
 }
-#FlexibleIntegration .container .row .flexibleText span {
+#FlexibleIntegration .container .row .flexibleImg .flexibleText span {
   font-size: 12px;
   color: rgb(117, 117, 117);
   font-weight: 700;
   padding-bottom: 20px;
 }
-#FlexibleIntegration .container .row .flexibleText .logoImg {
+#FlexibleIntegration .container .row .flexibleImg .flexibleText .logoImg {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   gap: 25px;
 }
-#FlexibleIntegration .container .row .flexibleText .logoImg img {
+#FlexibleIntegration .container .row .flexibleImg .flexibleText .logoImg img {
   max-width: 20%;
 }
-
-#meetingApp {
+#FlexibleIntegration #meetingApp {
   width: 100%;
   background-color: #F6F7F8;
 }
-#meetingApp .container .row .appText {
+#FlexibleIntegration #meetingApp .container .row .appText {
   text-align: center;
   padding: 30px;
 }
-#meetingApp .container .row .appText h2 {
+#FlexibleIntegration #meetingApp .container .row .appText h2 {
   color: #3DB554;
   padding-bottom: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-#meetingApp .container .row .appImg {
+#FlexibleIntegration #meetingApp .container .row .appImg {
   align-items: center;
   justify-content: center;
   display: flex;
   padding-bottom: 30px;
 }
-#meetingApp .container .row .appImg img {
+#FlexibleIntegration #meetingApp .container .row .appImg img {
   max-width: 100%;
 }
-
-#trustedByThousands {
+#FlexibleIntegration #trustedByThousands {
   width: 100%;
 }
-#trustedByThousands .container .row .trusted {
+#FlexibleIntegration #trustedByThousands .container .row .trusted {
   padding-top: 30px;
   text-align: center;
   padding-bottom: 20px;
 }
-#trustedByThousands .container .row .trusted h3 {
+#FlexibleIntegration #trustedByThousands .container .row .trusted h3 {
   font-weight: 200;
   padding-top: 20px;
   color: rgb(255, 136, 0);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-#trustedByThousands .container .row .petrValenta {
+#FlexibleIntegration #trustedByThousands .container .row .petrValenta {
   padding-bottom: 30px;
   text-align: center;
 }
-#trustedByThousands .container .row .petrValenta .petrValentaImg {
+#FlexibleIntegration #trustedByThousands .container .row .petrValenta .petrValentaImg {
   padding: 20px;
 }
-#trustedByThousands .container .row .petrValenta .petrValentaImg img {
+#FlexibleIntegration #trustedByThousands .container .row .petrValenta .petrValentaImg img {
   max-width: 30%;
 }
-#trustedByThousands .container .row .petrValenta p {
+#FlexibleIntegration #trustedByThousands .container .row .petrValenta p {
   font-weight: 600;
   margin-top: 5px;
 }
-#trustedByThousands .container .row .petrValenta span {
+#FlexibleIntegration #trustedByThousands .container .row .petrValenta span {
   text-align: center;
   color: grey;
 }
-#trustedByThousands .container .row .IlpoLehtola {
+#FlexibleIntegration #trustedByThousands .container .row .IlpoLehtola {
   padding-bottom: 30px;
   text-align: center;
 }
-#trustedByThousands .container .row .IlpoLehtola .IlpoLehtolaImg {
+#FlexibleIntegration #trustedByThousands .container .row .IlpoLehtola .IlpoLehtolaImg {
   padding: 20px;
 }
-#trustedByThousands .container .row .IlpoLehtola .IlpoLehtolaImg img {
+#FlexibleIntegration #trustedByThousands .container .row .IlpoLehtola .IlpoLehtolaImg img {
   max-width: 30%;
 }
-#trustedByThousands .container .row .IlpoLehtola p {
+#FlexibleIntegration #trustedByThousands .container .row .IlpoLehtola p {
   font-weight: 600;
   margin-top: 5px;
 }
-#trustedByThousands .container .row .IlpoLehtola span {
+#FlexibleIntegration #trustedByThousands .container .row .IlpoLehtola span {
   text-align: center;
   color: grey;
 }
-#trustedByThousands .container .row .ZsoltTompe {
+#FlexibleIntegration #trustedByThousands .container .row .ZsoltTompe {
   padding-bottom: 30px;
   text-align: center;
 }
-#trustedByThousands .container .row .ZsoltTompe .ZsoltTompeImg {
+#FlexibleIntegration #trustedByThousands .container .row .ZsoltTompe .ZsoltTompeImg {
   padding: 20px;
 }
-#trustedByThousands .container .row .ZsoltTompe .ZsoltTompeImg img {
+#FlexibleIntegration #trustedByThousands .container .row .ZsoltTompe .ZsoltTompeImg img {
   max-width: 30%;
 }
-#trustedByThousands .container .row .ZsoltTompe p {
+#FlexibleIntegration #trustedByThousands .container .row .ZsoltTompe p {
   font-weight: 600;
   margin-top: 5px;
 }
-#trustedByThousands .container .row .ZsoltTompe span {
+#FlexibleIntegration #trustedByThousands .container .row .ZsoltTompe span {
   text-align: center;
   color: grey;
 }
-
-#AvatarSec {
+#FlexibleIntegration #AvatarSec {
   width: 100%;
 }
-#AvatarSec .container .row .avatarIcon img {
+#FlexibleIntegration #AvatarSec .container .row .avatarIcon img {
   max-width: 100%;
   padding: 20px;
 }
-
-#formSec {
+#FlexibleIntegration #formSec {
   width: 100%;
   background-image: url(/img/help-bg.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
-#formSec .container .row .formrow {
+#FlexibleIntegration #formSec .container .row .formrow {
   text-align: center;
   padding: 30px;
 }
-#formSec .container .row .formrow h1 {
+#FlexibleIntegration #formSec .container .row .formrow h1 {
   font-size: 30px;
   font-weight: 200;
   color: white;
 }
-#formSec .container .row .formrow h5 {
+#FlexibleIntegration #formSec .container .row .formrow h5 {
   color: white;
   font-weight: 400;
 }
-#formSec .container .row .MyForm {
+#FlexibleIntegration #formSec .container .row .MyForm {
   align-items: center;
   justify-content: center;
   background-color: #fff;
@@ -426,12 +466,12 @@ header .collapseDiv ul {
   margin: auto;
   transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
 }
-#formSec .container .row .MyForm #contactForm {
+#FlexibleIntegration #formSec .container .row .MyForm #contactForm {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-#formSec .container .row .MyForm input {
+#FlexibleIntegration #formSec .container .row .MyForm input {
   padding: 5px;
   outline: none;
   height: 35px;
@@ -439,19 +479,19 @@ header .collapseDiv ul {
   border-radius: 5px;
   border: 0.2px solid grey;
 }
-#formSec .container .row .MyForm textarea {
+#FlexibleIntegration #formSec .container .row .MyForm textarea {
   padding: 8px;
   margin-bottom: 16px;
   outline: none;
   border-radius: 5px;
   border: 0.2px solid grey;
 }
-#formSec .container .row .MyForm .formbtn {
+#FlexibleIntegration #formSec .container .row .MyForm .formbtn {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
-#formSec .container .row .MyForm .formbtn button {
+#FlexibleIntegration #formSec .container .row .MyForm .formbtn button {
   padding: 15px 10px 15px 10px;
   border: none;
   border-radius: 30px;
@@ -460,69 +500,151 @@ header .collapseDiv ul {
   color: white;
   font-weight: 500;
 }
-#formSec .container .row .MyForm .formbtn button:hover {
+#FlexibleIntegration #formSec .container .row .MyForm .formbtn button:hover {
   box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
   transition: 0.2s;
 }
-#formSec .container .row .MyForm:hover {
+#FlexibleIntegration #formSec .container .row .MyForm:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-#formSec .container .row .MyForm:active {
+#FlexibleIntegration #formSec .container .row .MyForm:active {
   transform: translateY(0) scale(1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-#formSec .container .row p {
+#FlexibleIntegration #formSec .container .row p {
   padding-top: 30px;
   text-align: center;
   color: rgb(255, 255, 255);
   padding-bottom: 30px;
 }
-
-#appsMoreHelp {
+#FlexibleIntegration #formSec {
+  width: 100%;
+  background-image: url(/img/help-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#FlexibleIntegration #formSec .container .row .formrow {
+  text-align: center;
+  padding: 30px;
+}
+#FlexibleIntegration #formSec .container .row .formrow h1 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+}
+#FlexibleIntegration #formSec .container .row .formrow h5 {
+  color: white;
+  font-weight: 400;
+}
+#FlexibleIntegration #formSec .container .row .MyForm {
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding-top: 20px;
+  width: 40%;
+  margin: auto;
+  transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
+}
+#FlexibleIntegration #formSec .container .row .MyForm #contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#FlexibleIntegration #formSec .container .row .MyForm input {
+  padding: 5px;
+  outline: none;
+  height: 35px;
+  width: auto;
+  border-radius: 5px;
+  border: 0.2px solid grey;
+}
+#FlexibleIntegration #formSec .container .row .MyForm textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: 0.2px solid grey;
+}
+#FlexibleIntegration #formSec .container .row .MyForm .formbtn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#FlexibleIntegration #formSec .container .row .MyForm .formbtn button {
+  padding: 15px 10px 15px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#FlexibleIntegration #formSec .container .row .MyForm .formbtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+#FlexibleIntegration #formSec .container .row .MyForm:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#FlexibleIntegration #formSec .container .row .MyForm:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#FlexibleIntegration #formSec .container .row p {
+  padding-top: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+}
+#FlexibleIntegration #appsMoreHelp {
   width: 100%;
 }
-#appsMoreHelp .container .row .more h5 {
+#FlexibleIntegration #appsMoreHelp .container .row .more h5 {
   color: #3DB554;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#appsMoreHelp .container .row .more p {
+#FlexibleIntegration #appsMoreHelp .container .row .more p {
   color: grey;
   display: flex;
   flex-direction: column;
 }
-#appsMoreHelp .container .row .more a {
+#FlexibleIntegration #appsMoreHelp .container .row .more a {
   text-decoration: none;
   /* Alt çizgiyi kaldır */
   color: inherit;
   /* Bağlantının rengini miras al */
 }
-#appsMoreHelp .container .row .more .more a:hover {
+#FlexibleIntegration #appsMoreHelp .container .row .more .more a:hover {
   text-decoration: underline;
   /* Hover durumunda alt çizgiyi ekler */
 }
-#appsMoreHelp .container .row .helps h5 {
+#FlexibleIntegration #appsMoreHelp .container .row .helps h5 {
   color: #3DB554;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#appsMoreHelp .container .row .helps p {
+#FlexibleIntegration #appsMoreHelp .container .row .helps p {
   color: grey;
   display: flex;
   flex-direction: column;
 }
-#appsMoreHelp .container .row .helps a {
+#FlexibleIntegration #appsMoreHelp .container .row .helps a {
   text-decoration: none;
   /* Alt çizgiyi kaldır */
   color: inherit;
   /* Bağlantının rengini miras al */
 }
-#appsMoreHelp .container .row .helps .more a:hover {
+#FlexibleIntegration #appsMoreHelp .container .row .helps .more a:hover {
   text-decoration: underline;
   /* Hover durumunda alt çizgiyi ekler */
 }
-#appsMoreHelp .container .row .icon {
+#FlexibleIntegration #appsMoreHelp .container .row .icon {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -530,14 +652,22 @@ header .collapseDiv ul {
   /* İkonları yatayda hizala */
   gap: 20px;
 }
-#appsMoreHelp .container .row .icon i {
+#FlexibleIntegration #appsMoreHelp .container .row .icon i {
   padding-bottom: 20px;
 }
-#appsMoreHelp .container .row .icon a {
+#FlexibleIntegration #appsMoreHelp .container .row .icon a {
   text-decoration: none;
   /* Alt çizgiyi kaldır */
   color: inherit;
   /* Bağlantının rengini miras al */
+}
+#FlexibleIntegration #appsMoreHelp {
+  width: 100%;
+  background-color: red;
+}
+#FlexibleIntegration #appsMoreHelp .container .row .more h5 {
+  color: #3DB554;
+  font-size: 50px;
 }
 
 footer {
@@ -553,6 +683,87 @@ footer .container .row .footerRow ul {
   display: flex;
   /* Liste öğelerini yan yana sırala */
   gap: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .collapseDiv ul {
+  margin: auto;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#regSec {
+  width: 100%;
+  height: 600px;
+  background-image: url(/img/hero-bg.jpg);
+  background-attachment: fixed;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+}
+#regSec .container .row .regImg {
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#regSec .container .row .regImg img {
+  max-width: 100%;
+  padding-top: 30px;
+}
+#regSec .container .row #registerForm {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  border-radius: 30px;
+}
+#regSec .container .row #registerForm select {
+  border-radius: 10px;
+  outline: none;
+  padding: 8px;
+}
+#regSec .container .row #registerForm input {
+  padding: 5px;
+  outline: none;
+  height: 35px;
+  width: auto;
+  border-radius: 10px;
+  border: 0.2px solid grey;
+  display: flex;
+  gap: 20px;
+}
+#regSec .container .row #registerForm input #companyName {
+  padding-top: 80px;
+}
+#regSec .container .row .formbtn {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#regSec .container .row .formbtn button {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#regSec .container .row .formbtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
 }
 
 * {
@@ -669,71 +880,73 @@ header .collapseDiv ul {
 
 #basicSmart {
   width: 100%;
+  padding-top: 30px;
 }
 #basicSmart .container .row .basicSmartText {
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#basicSmart .container .row .basicSmartText h1 {
+  color: rgb(255, 136, 0);
+  font-weight: 200;
+}
+#basicSmart .container .row .topFeatures img {
+  max-width: 100%;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+#basicSmart .container .row .topFeatures h3 {
+  color: #3DB554;
+  padding-bottom: 30px;
+}
+#basicSmart .container .row .topFeatures p {
+  color: grey;
 }
 
-#regSec {
+#addHockReservation {
   width: 100%;
-  height: 600px;
-  background-image: url(/img/hero-bg.jpg);
-  background-attachment: fixed;
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
-  padding: 30px;
 }
-#regSec .container .row .regImg {
-  padding-top: 30px;
-  align-items: center;
-  justify-content: center;
+#addHockReservation .container .row .hockReservation h1 {
+  color: #3DB554;
 }
-#regSec .container .row .regImg img {
-  max-width: 100%;
-  padding-top: 30px;
+#addHockReservation .container .row .hockReservation h3 {
+  color: #3DB554;
 }
-#regSec .container .row #registerForm {
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  gap: 15px;
-  border-radius: 30px;
+#addHockReservation .container .row .hockReservation p {
+  color: grey;
 }
-#regSec .container .row #registerForm select {
-  border-radius: 10px;
-  outline: none;
-  padding: 8px;
-}
-#regSec .container .row #registerForm input {
-  padding: 5px;
-  outline: none;
-  height: 35px;
-  width: auto;
-  border-radius: 10px;
-  border: 0.2px solid grey;
+#addHockReservation .container .row .hockReservation .hockText {
   display: flex;
   gap: 20px;
 }
-#regSec .container .row #registerForm input #companyName {
-  padding-top: 80px;
+#addHockReservation .container .row .hockReservation img {
+  max-width: 100%;
+  padding-bottom: 30px;
 }
-#regSec .container .row .formbtn {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+#addHockReservation .container .row .hockReservation h4 {
+  color: rgb(255, 136, 0);
+  font-weight: 300;
 }
-#regSec .container .row .formbtn button {
-  padding: 10px 15px 10px 15px;
-  border: none;
-  border-radius: 30px;
-  background-color: #3DB554;
-  box-shadow: 0 0 25px #3DB554;
-  color: white;
-  font-weight: 500;
+
+#confirmtionAndFullscreen {
+  width: 100%;
 }
-#regSec .container .row .formbtn button:hover {
-  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
-  transition: 0.2s;
+#confirmtionAndFullscreen .container .row .confirmationRow h1 {
+  color: #3DB554;
+}
+#confirmtionAndFullscreen .container .row .confirmationRow h3 {
+  color: #3DB554;
+}
+#confirmtionAndFullscreen .container .row .confirmationRow p {
+  color: grey;
+}
+#confirmtionAndFullscreen .container .row .confirmationRow img {
+  max-width: 100%;
+}
+#confirmtionAndFullscreen .container .row .confirmationRow h4 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: rgb(255, 136, 0);
+  font-weight: 300;
 }

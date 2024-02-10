@@ -76,7 +76,12 @@ header {
         }
 
         .meetingImg {
+            
             padding: 30px;
+            img{
+                max-width: 100%;
+                transition: transform 0.9s ease;
+            }
         }
     }
 
@@ -109,7 +114,9 @@ header {
                 padding: 30px;
 
                 img {
+                   
                     max-width: 100%;
+                    transition: transform 0.3s ease-in-out;
                 }
 
                 p {
@@ -183,6 +190,8 @@ header {
 
                 img {
                     max-width: 40%;
+                   
+                    transition: transform 0.3s ease-in-out;
                 }
             }
 
@@ -373,6 +382,47 @@ header {
 
     .container {
         .row {
+            .flexibleImg {
+                position: relative;
+                overflow: hidden;
+                height: 400px; 
+                background-color: red;
+                #imageSlider img {
+                    max-width: 100%;
+                }
+                
+                #prevBtn,
+                #nextBtn {
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    padding: 16px;
+                    margin-top: -22px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border: none;
+                    background-color: transparent;
+                }
+                
+                #prevBtn:hover, #nextBtn:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+                
+                .detailButton {
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: rgb(255, 136, 0);
+                    color: white;
+                    cursor: pointer;
+                    transition: 0.3s;
+                }
+                
+                .detailButton:hover {
+                    background-color: rgba(255, 136, 0, 0.8);
+                }
             .flexibleText {
 
                 h3 {
@@ -427,159 +477,7 @@ header {
 
 
 
-// #apisection {
-//     .divbtn {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         padding-top: 20px;
 
-//         #btn {
-
-//             font-size: 15px;
-//             background-color: black;
-//             color: white;
-//             font-weight: bolder;
-//             padding: 10px;
-//             border: none;
-
-//         }
-
-//         #btn:hover {
-//             background-color: white;
-//             color: black;
-//             border: 1px solid black;
-//             transition: 0.5s;
-//         }
-//     }
-
-
-
-//     .container {
-//         width: 95%;
-
-//         .row {
-//             margin-top: 30px;
-//             margin-bottom: 30px;
-//             padding: 30px;
-
-//             .apitext {
-//                 align-items: center;
-//                 justify-content: center;
-//                 text-align: center;
-//                 padding: 30px;
-
-//                 h2 {
-//                     font-size: 35px;
-//                     padding: 20px;
-//                     font-weight: 800;
-//                 }
-
-//                 span {
-//                     color: grey;
-//                     font-size: 18px;
-//                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-//                 }
-
-//                 p {
-//                     padding: 20px;
-//                     color: grey;
-//                     font-size: 17px;
-//                 }
-
-//             }
-
-//             .buttons {
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 gap: 10px;
-//                 margin-bottom: 30px;
-
-//                 input {
-//                     width: 90px;
-//                     height: 33px;
-//                     padding-left: 20px;
-//                     border: 1px solid black;
-//                     outline: none;
-
-//                     #inpp {
-//                         padding: 10px;
-//                     }
-//                 }
-
-//                 button {
-//                     font-size: 15px;
-//                     background-color: black;
-//                     color: white;
-//                     font-weight: bolder;
-//                     padding: 5px;
-//                     border: none;
-//                     margin-left: -10px;
-
-//                     button:hover {
-//                         background-color: white;
-//                         color: black;
-
-//                     }
-
-
-//                 }
-
-//                 button:hover {
-//                     background-color: rgb(255, 255, 255);
-//                     color: #000000;
-//                     transition: 0.5s;
-
-//                 }
-//             }
-
-
-
-
-
-//             #apidiv {
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 flex-wrap: wrap;
-//                 gap: 30px;
-//                 padding: 5px;
-//                 border-radius: 10px;
-
-//                 .boxDiv {
-//                     display: flex;
-//                     flex-direction: column;
-//                     align-items: center;
-//                     justify-content: center;
-//                     border: 0.5px solid#414040;
-//                     border-radius: 10px;
-//                     padding: 30px;
-//                     text-align: center;
-
-//                     .addtobasketbtn {
-//                         font-size: 15px;
-//                         background-color: black;
-//                         color: white;
-//                         border-radius: 5px;
-//                         font-weight: bolder;
-//                         padding: 10px;
-//                         border: none;
-
-//                     }
-
-//                     .addtobasketbtn:hover {
-//                         background-color: white;
-//                         color: #000000;
-//                         transition: 0.5s;
-
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-// }
 
 
 
@@ -737,6 +635,114 @@ header {
 
 
 
+#formSec {
+    width: 100%;
+    background-image: url(/img/help-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+    .container {
+        .row {
+            .formrow {
+                text-align: center;
+                padding: 30px;
+
+                h1 {
+                    font-size: 30px;
+                    font-weight: 200;
+                    color: white;
+                }
+
+                h5 {
+                    color: white;
+                    font-weight: 400;
+                }
+            }
+
+            .MyForm {
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid grey;
+                padding-top: 20px;
+                width: 40%;
+                margin: auto;
+                transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
+
+                #contactForm {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                }
+
+                input {
+                    padding: 5px;
+                    outline: none;
+                    height: 35px;
+                    width: auto;
+                    border-radius: 5px;
+                    border: 0.2px solid grey;
+                }
+
+                textarea {
+                    padding: 8px;
+                    margin-bottom: 16px;
+                    outline: none;
+                    border-radius: 5px;
+                    border: 0.2px solid grey
+                }
+
+                .formbtn {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+
+                    text-align: center;
+
+                    button {
+
+                        padding: 15px 10px 15px 10px;
+                        border: none;
+                        border-radius: 30px;
+                        background-color: #3DB554;
+                        box-shadow: 0 0 25px #3DB554;
+
+                        color: white;
+                        font-weight: 500;
+
+                    }
+
+                    button:hover {
+                        box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+                        transition: 0.2s;
+                    }
+                }
+
+            }
+
+            .MyForm:hover {
+                transform: translateY(-5px) scale(1.05);
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .MyForm:active {
+                transform: translateY(0) scale(1);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            p {
+                padding-top: 30px;
+                text-align: center;
+                color: rgb(255, 255, 255);
+                padding-bottom: 30px;
+            }
+
+        }
+    }
+}
+
 
 
 
@@ -851,6 +857,11 @@ header {
 
 
 
+
+
+
+
+
 #appsMoreHelp {
     width: 100%;
 
@@ -937,29 +948,42 @@ header {
 }
 
 
-
-
-
-
-footer {
+#appsMoreHelp{
     width: 100%;
-
+    background-color: red;
     .container {
-        .row {
-            .footerRow ul {
-                list-style: none;
-                /* Liste işaretini kaldır */
-                padding: 0;
-                /* Liste içi boşluğu sıfırla */
-                margin: 0;
-                /* Liste kenar boşluğunu sıfırla */
-                display: flex;
-                /* Liste öğelerini yan yana sırala */
-                gap: 25px;
+       .row{
+        .more{
+            h5{
+             color: #3DB554;
+             font-size: 50px;
             }
+        }
+       }
+    }
+}
 
-       
 
+
+
+
+}
+
+footer{
+    width: 100%;
+ .container{
+    .row{
+        .footerRow ul{
+            list-style: none;
+            /* Liste işaretini kaldır */
+            padding: 0;
+            /* Liste içi boşluğu sıfırla */
+            margin: 0;
+            /* Liste kenar boşluğunu sıfırla */
+            display: flex;
+            /* Liste öğelerini yan yana sırala */
+            gap: 25px;
         }
     }
+ }
 }

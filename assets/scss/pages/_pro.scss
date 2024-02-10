@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    .collapseDiv {
+        ul {
+            margin: auto;
+            justify-content: space-between;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 600;
+
+        }
+
+    }
+}
+
+#modernMeeting{
+    width: 100%;
+    height: 400px;
+    background-image: url(/img/product-bg.jpg);
+    background-attachment: fixed;
+   background-size: cover;
+    background-size: cover;
+    
+    .container{
+        .row{
+            .modernMeetingText{
+               padding-top: 30px;
+                h3{
+                    color: white;
+                    padding-top: 30px;
+                }
+                h5{
+                    color: rgb(189, 189, 189);
+                    padding-top: 20px;
+                    font-weight: 200;
+                }
+                .modernButton{
+                    text-align: center;
+                    padding-top: 30px;
+                    button {
+
+                        padding: 10px 15px 10px 15px;
+                        border: none;
+                        border-radius: 30px;
+                        background-color:  rgb(255, 136, 0);
+                        box-shadow: 0 0 25px  rgb(255, 136, 0);
+    
+                        color: white;
+                        font-weight: 500;
+    
+                    }
+    
+                    button:hover {
+                        box-shadow: 0 0 5px  rgb(255, 136, 0), 0 0 50px rgb(255, 136, 0);
+                        transition: 0.2s;
+                    }
+                }
+            }
+            .modernMeetingImg{
+                padding-top: 30px;
+                img{
+                    padding-top: 30px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+#cloudOnprem{
+    width: 100%;
+    .container{
+        .row{
+            .cloudText{
+                text-align: center;
+                padding-top: 30px;
+                h4{
+                    color: #3DB554;
+                    font-weight: 200;
+                }
+            }
+            .cloudLogo{
+                text-align: center;
+                img{
+                    max-width: 30%;
+                    padding: 20px;
+                }
+                h3{
+                    color: #33495C;
+                    font-weight: 700;
+                    padding-bottom: 20px;
+                }
+                p{
+                    color: #33495C;
+                }
+                .divIcon{
+                    padding-top: 20px;
+                  margin: 20px;
+                       justify-content: space-between;
+                    
+                }
+            }
+            .buttonDiv{
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 30px;
+                button {
+
+                    padding: 10px 15px 10px 15px;
+                    border: none;
+                    border-radius: 30px;
+                    background-color: #3DB554;
+                    box-shadow: 0 0 25px  #3DB554;
+
+                    color: white;
+                    font-weight: 500;
+
+                }
+
+                button:hover {
+                    box-shadow: 0 0 5px  #3DB554, 0 0 50px #3DB554;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}
+
+
+#basicSmart{
+    width: 100%;
+    padding-top: 30px;
+    .container{
+        .row{
+            .basicSmartText{
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                h1{
+
+                    color:  rgb(255, 136, 0);
+                    font-weight: 200;
+                }
+            }
+            .topFeatures{
+                img{
+                    max-width: 100%;
+                    padding-bottom: 30px;
+                    margin-bottom: 30px;
+                }
+                h3{
+                color: #3DB554;
+                    padding-bottom: 30px;
+                }
+                p{
+                    color: grey;
+                }
+            }
+        }
+    }
+}
+
+
+
+#addHockReservation{
+    width: 100%;
+    .container{
+        .row{
+            .hockReservation{
+                h1{
+                    color: #3DB554;
+                }
+                h3{
+                    color: #3DB554;
+                }
+                p{
+                    color: grey;
+                }
+                .hockText{
+                    display: flex;
+                    gap: 20px;
+                }
+                img{
+                    max-width: 100%;
+                    padding-bottom: 30px;
+                }
+                h4{
+                    color: rgb(255, 136, 0) ;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+
+
+#confirmtionAndFullscreen{
+    width: 100%;
+    .container{
+        .row{
+           .confirmationRow{
+            h1{
+                color: #3DB554;
+            }
+            h3{
+                color: #3DB554;
+            }
+            p{
+                color: grey;
+            }
+          
+            img{
+                max-width: 100%;
+            }
+            h4{
+                padding-bottom: 20px;
+                padding-top: 20px;
+                color: rgb(255, 136, 0);
+                font-weight: 300;
+            }
+           } 
+        }
+    }
+}

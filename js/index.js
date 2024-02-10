@@ -1,42 +1,20 @@
-// const div = document.getElementById('apidiv')
-// const btn = document.getElementById('btn')
-// let page=1
-// let limit=6
 
-// async function getproducts() {
-   
-//     try{
-//    const response = await axios.get(`https://655c30a1ab37729791aa03c7.mockapi.io/fi/products?page=${page}&limit=${limit}`)
-//    const data = response.data;
-//    db=response.data
-//    data.forEach(item=>{
-// const box = document.createElement('div')
-// box.className = 'boxDiv'
-// box.innerHTML = `
-// <img style="width:190px" src='${item.image}' alt="">
-// <p class='title' style="width:200px">${item.name}</p>
-// <p class='title' style="width:200px">${item.price}</p>
-// <button class="addtobasketbtn" onclick="addToBasket(${item.id})">Add to basket</button>
+document.addEventListener("DOMContentLoaded", function () {
+    // meetingImg div'ini ve içindeki img elementini alın
+    var meetingImg = document.querySelector(".meetingImg");
+    var imgElement = meetingImg.querySelector("img");
 
-// `
-// div.appendChild(box)
-// })
-// page++;
-// }
-//     catch(error){
-//         console.error('Error fetching products:',error)
-//     }
-// }
-   
+    // İmage'ın başlangıç pozisyonunu hesaplayın
+    var initialPosition = -imgElement.clientWidth / 6;
 
+    // Başlangıç pozisyonunu ayarlayın
+    imgElement.style.transform = "translateX(" + initialPosition + "px)";
 
-
-
-
-// const butn = document.getElementById('butn')
-// const inpp = document.getElementById('inpp')
-// const list = document.querySelector('.list')
-// const trip = document.getElementById('trip')
+    // Sayfanın yüklenmesinden bir süre sonra animasyonu başlatın
+    setTimeout(function() {
+        imgElement.style.transform = "translateX(0)";
+    }, 700); // 0.6 saniye gecikme
+});
 
 
 
@@ -46,36 +24,82 @@
 
 
 
-// btn.addEventListener('click',getproducts) 
-// function addToBasket(id) {
-//     let cart = JSON.parse(localStorage.getItem('cart'))||[]
-//     cart.push(db.find(item=>item.id==id))
-//     localStorage.setItem('cart',JSON.stringify(cart))
-// }
-// window.onload = ()=>{
-//     getproducts()
-// }
+document.addEventListener("DOMContentLoaded", function () {
+    // workplaceImg içindeki tüm img elementlerini seçin
+    var imgElements = document.querySelectorAll(".workplaceImg img");
+
+    // Her bir img elementi için mouse olaylarına event listener ekleyin
+    imgElements.forEach(function(imgElement) {
+        imgElement.addEventListener("mouseover", function() {
+            // Mouse üzerine geldiğinde img'i yukarı kaldır
+            imgElement.style.transform = "translateY(-10px)";
+        });
+
+        imgElement.addEventListener("mouseout", function() {
+            // Mouse ayrıldığında img'i aşağı indir
+            imgElement.style.transform = "translateY(0)";
+        });
+    });
+});
 
 
 
 
 
-// const submit = document.getElementById('myFORM');
-// const girisugurluDiv = document.querySelector('.girisugurlu');
 
-// function axiosPost(event) {
-//   event.preventDefault();
-//   axios.post("https://655c30a1ab37729791aa03c7.mockapi.io/fi/products", {
-//     ad: nameinput.value,
-//     phone: phoneinput.value,
-//     email: emailinput.value
-//   }).then(res => {
-//     console.log(res);
-    
-//   });
-// }
+document.addEventListener("DOMContentLoaded", function () {
+    // meetingRow içindeki tüm img elementlerini seçin
+    var imgElements = document.querySelectorAll(".meetingRow img");
 
-// myFORM.addEventListener('submit', axiosPost)
+    // Her bir img elementi için mouse olaylarına event listener ekleyin
+    imgElements.forEach(function(imgElement) {
+        imgElement.addEventListener("mouseenter", function() {
+            // Mouse üzerine geldiğinde img'i sağa sola sallayın
+            imgElement.style.transform = "translateX(-9px)";
+        });
+
+        imgElement.addEventListener("mouseleave", function() {
+            // Mouse ayrıldığında img'i başlangıç pozisyonuna geri getirin
+            imgElement.style.transform = "translateX(0)";
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
+let currentImageIndex = 0;
+const images = ['./img/device-homepage-qbic.png', './img/other-image.jpg', './img/another-image.jpg'];
+
+function changeImage(direction) {
+    currentImageIndex += direction;
+
+    if (currentImageIndex < 0) {
+        currentImageIndex = images.length - 1;
+    } else if (currentImageIndex >= images.length) {
+        currentImageIndex = 0;
+    }
+
+    document.getElementById('imageSlider').innerHTML = `<img src="${images[currentImageIndex]}" alt="">`;
+}
+
+function fetchDetails() {
+    const selectedImageUrl = images[currentImageIndex];
+    // Burada seçilen resmin detayları için bir API çağrısı yapabilirsiniz.
+    // Örneğin, seçilen resmin URL'sini kullanarak bir API'ye istek göndermek.
+    console.log('API Request for Details:', selectedImageUrl);
+}
+
+
+
+
+
 
 
 document.getElementById('sendMessage').addEventListener('click', function () {
