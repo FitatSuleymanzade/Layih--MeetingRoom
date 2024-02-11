@@ -16,6 +16,352 @@ header .collapseDiv ul {
   font-weight: 600;
 }
 
+#regSec {
+  width: 100%;
+  height: 600px;
+  background-image: url(/img/hero-bg.jpg);
+  background-attachment: fixed;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#regSec .container .row .regImg {
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#regSec .container .row .regImg img {
+  max-width: 100%;
+  padding-top: 30px;
+}
+#regSec .container .row #registerForm {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  border-radius: 8px;
+  border: 3px solid rgb(255, 136, 0);
+  margin: auto;
+  transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+#regSec .container .row #registerForm select {
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #3DB554;
+  background-color: transparent;
+  color: white;
+}
+#regSec .container .row #registerForm select option {
+  color: black;
+}
+#regSec .container .row #registerForm input {
+  padding: 5px;
+  outline: none;
+  height: 35px;
+  width: auto;
+  border-radius: 5px;
+  border: 2px solid #3DB554;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  gap: 20px;
+}
+#regSec .container .row #registerForm input[required]::placeholder {
+  color: white;
+}
+#regSec .container .row #registerForm input[required] {
+  border-color: #3DB554;
+}
+#regSec .container .row .formbtn {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#regSec .container .row .formbtn button {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#regSec .container .row .formbtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .collapseDiv ul {
+  margin: auto;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#modernMeeting {
+  width: 100%;
+  height: 400px;
+  background-image: url(/img/product-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: cover;
+}
+#modernMeeting .container .row .modernMeetingText {
+  padding-top: 30px;
+}
+#modernMeeting .container .row .modernMeetingText h3 {
+  color: white;
+  padding-top: 30px;
+}
+#modernMeeting .container .row .modernMeetingText h5 {
+  color: rgb(189, 189, 189);
+  padding-top: 20px;
+  font-weight: 200;
+}
+#modernMeeting .container .row .modernMeetingText .modernButton {
+  text-align: center;
+  padding-top: 30px;
+}
+#modernMeeting .container .row .modernMeetingText .modernButton button {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(255, 136, 0);
+  box-shadow: 0 0 25px rgb(255, 136, 0);
+  color: white;
+  font-weight: 500;
+}
+#modernMeeting .container .row .modernMeetingText .modernButton button:hover {
+  box-shadow: 0 0 5px rgb(255, 136, 0), 0 0 50px rgb(255, 136, 0);
+  transition: 0.2s;
+}
+#modernMeeting .container .row .modernMeetingImg {
+  padding-top: 30px;
+}
+#modernMeeting .container .row .modernMeetingImg img {
+  padding-top: 30px;
+  max-width: 100%;
+}
+
+#cloudOnprem {
+  width: 100%;
+}
+#cloudOnprem .container .row .cloudText {
+  text-align: center;
+  padding-top: 30px;
+}
+#cloudOnprem .container .row .cloudText h4 {
+  color: #3DB554;
+  font-weight: 200;
+}
+#cloudOnprem .container .row .cloudLogo {
+  text-align: center;
+}
+#cloudOnprem .container .row .cloudLogo img {
+  max-width: 30%;
+  padding: 20px;
+}
+#cloudOnprem .container .row .cloudLogo h3 {
+  color: #33495C;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+#cloudOnprem .container .row .cloudLogo p {
+  color: #33495C;
+}
+#cloudOnprem .container .row .cloudLogo .divIcon {
+  padding-top: 20px;
+  margin: 20px;
+  justify-content: space-between;
+}
+#cloudOnprem .container .row .buttonDiv {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+#cloudOnprem .container .row .buttonDiv button {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#cloudOnprem .container .row .buttonDiv button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+
+#basicSmart {
+  width: 100%;
+  padding-top: 30px;
+}
+#basicSmart .container .row .basicSmartText {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#basicSmart .container .row .basicSmartText h1 {
+  color: rgb(255, 136, 0);
+  font-weight: 200;
+}
+#basicSmart .container .row .topFeatures img {
+  max-width: 100%;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+#basicSmart .container .row .topFeatures h3 {
+  color: #3DB554;
+  padding-bottom: 30px;
+}
+#basicSmart .container .row .topFeatures p {
+  color: grey;
+}
+
+#addHockReservation {
+  width: 100%;
+}
+#addHockReservation .container .row .hockReservation h1 {
+  color: #3DB554;
+}
+#addHockReservation .container .row .hockReservation h3 {
+  color: #3DB554;
+}
+#addHockReservation .container .row .hockReservation p {
+  color: grey;
+}
+#addHockReservation .container .row .hockReservation .hockText {
+  display: flex;
+  gap: 20px;
+}
+#addHockReservation .container .row .hockReservation img {
+  max-width: 100%;
+  padding-bottom: 30px;
+}
+#addHockReservation .container .row .hockReservation h4 {
+  color: rgb(255, 136, 0);
+  font-weight: 300;
+}
+
+#confirmtionAndFullscreen {
+  width: 100%;
+}
+#confirmtionAndFullscreen .container .row .confirmationRow h1 {
+  color: #3DB554;
+}
+#confirmtionAndFullscreen .container .row .confirmationRow h3 {
+  color: #3DB554;
+}
+#confirmtionAndFullscreen .container .row .confirmationRow p {
+  color: grey;
+}
+#confirmtionAndFullscreen .container .row .confirmationRow img {
+  max-width: 100%;
+}
+#confirmtionAndFullscreen .container .row .confirmationRow h4 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: rgb(255, 136, 0);
+  font-weight: 300;
+}
+
+#roomVayfinder {
+  width: 100%;
+  background-color: #F6F7F8;
+  padding-top: 30px;
+}
+#roomVayfinder .container .row .vayfinderImg {
+  padding-top: 30px;
+}
+#roomVayfinder .container .row .vayfinderImg img {
+  max-width: 100%;
+}
+#roomVayfinder .container .row .vayfinderText h3 {
+  color: #3DB554;
+  padding-bottom: 20px;
+}
+#roomVayfinder .container .row .vayfinderText p {
+  color: grey;
+}
+#roomVayfinder .container .row .vayfinderText h6 {
+  padding-top: 10px;
+  color: rgb(255, 136, 0);
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+#roomVayfinder .container .row .vayFinderbtn {
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+#roomVayfinder .container .row .vayFinderbtn button {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(255, 136, 0);
+  box-shadow: 0 0 25px rgb(255, 136, 0);
+  color: white;
+  font-weight: 500;
+}
+#roomVayfinder .container .row .vayFinderbtn button:hover {
+  box-shadow: 0 0 5px rgb(255, 136, 0), 0 0 50px rgb(255, 136, 0);
+  transition: 0.2s;
+}
+
+#flexibleTable {
+  width: 100%;
+}
+#flexibleTable .container .row .tableee {
+  padding-top: 30px;
+}
+#flexibleTable .container .row .tableee h1 {
+  text-align: center;
+  color: rgb(255, 136, 0);
+  font-weight: 200;
+}
+#flexibleTable .container .row .tableee p {
+  text-align: center;
+  color: grey;
+  padding-bottom: 30px;
+}
+#flexibleTable .container .row .table-bordered th {
+  color: #3DB554;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .collapseDiv ul {
+  margin: auto;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 #MeetingAndConference {
   width: 100%;
   height: 500px;
@@ -270,228 +616,217 @@ header .collapseDiv ul {
 #FlexibleIntegration {
   width: 100%;
   padding-top: 30px;
-  background-color: #F6F7F8;
 }
 #FlexibleIntegration .container .row .flexibleImg {
   position: relative;
   overflow: hidden;
   height: 400px;
-  background-color: red;
 }
-#FlexibleIntegration .container .row .flexibleImg #imageSlider img {
+#FlexibleIntegration .container .row .flexibleImg img {
   max-width: 100%;
 }
-#FlexibleIntegration .container .row .flexibleImg #prevBtn,
-#FlexibleIntegration .container .row .flexibleImg #nextBtn {
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border: none;
-  background-color: transparent;
-}
-#FlexibleIntegration .container .row .flexibleImg #prevBtn:hover, #FlexibleIntegration .container .row .flexibleImg #nextBtn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-#FlexibleIntegration .container .row .flexibleImg .detailButton {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: rgb(255, 136, 0);
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-}
-#FlexibleIntegration .container .row .flexibleImg .detailButton:hover {
-  background-color: rgba(255, 136, 0, 0.8);
-}
-#FlexibleIntegration .container .row .flexibleImg .flexibleText h3 {
+#FlexibleIntegration .container .row .flexibleText h3 {
   padding-top: 20px;
   color: rgb(255, 136, 0);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-#FlexibleIntegration .container .row .flexibleImg .flexibleText h4 {
+#FlexibleIntegration .container .row .flexibleText h4 {
   color: grey;
   padding-top: 10px;
   font-weight: 300;
 }
-#FlexibleIntegration .container .row .flexibleImg .flexibleText p {
+#FlexibleIntegration .container .row .flexibleText p {
   padding-top: 30px;
+  color: grey;
 }
-#FlexibleIntegration .container .row .flexibleImg .flexibleText span {
+#FlexibleIntegration .container .row .flexibleText span {
   font-size: 12px;
   color: rgb(117, 117, 117);
   font-weight: 700;
   padding-bottom: 20px;
 }
-#FlexibleIntegration .container .row .flexibleImg .flexibleText .logoImg {
+#FlexibleIntegration .container .row .flexibleText .logoImg {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   gap: 25px;
 }
-#FlexibleIntegration .container .row .flexibleImg .flexibleText .logoImg img {
+#FlexibleIntegration .container .row .flexibleText .logoImg img {
   max-width: 20%;
 }
-#FlexibleIntegration #meetingApp {
+
+#meetingApp {
   width: 100%;
   background-color: #F6F7F8;
 }
-#FlexibleIntegration #meetingApp .container .row .appText {
+#meetingApp .container .row .appText {
   text-align: center;
   padding: 30px;
 }
-#FlexibleIntegration #meetingApp .container .row .appText h2 {
+#meetingApp .container .row .appText h2 {
   color: #3DB554;
   padding-bottom: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-#FlexibleIntegration #meetingApp .container .row .appImg {
+#meetingApp .container .row .appImg {
   align-items: center;
   justify-content: center;
   display: flex;
   padding-bottom: 30px;
 }
-#FlexibleIntegration #meetingApp .container .row .appImg img {
+#meetingApp .container .row .appImg img {
   max-width: 100%;
 }
-#FlexibleIntegration #trustedByThousands {
+
+#trustedByThousands {
   width: 100%;
 }
-#FlexibleIntegration #trustedByThousands .container .row .trusted {
+#trustedByThousands .container .row .trusted {
   padding-top: 30px;
   text-align: center;
   padding-bottom: 20px;
 }
-#FlexibleIntegration #trustedByThousands .container .row .trusted h3 {
+#trustedByThousands .container .row .trusted h3 {
   font-weight: 200;
   padding-top: 20px;
   color: rgb(255, 136, 0);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-#FlexibleIntegration #trustedByThousands .container .row .petrValenta {
+#trustedByThousands .container .row .petrValenta {
   padding-bottom: 30px;
   text-align: center;
 }
-#FlexibleIntegration #trustedByThousands .container .row .petrValenta .petrValentaImg {
+#trustedByThousands .container .row .petrValenta .petrValentaImg {
   padding: 20px;
 }
-#FlexibleIntegration #trustedByThousands .container .row .petrValenta .petrValentaImg img {
+#trustedByThousands .container .row .petrValenta .petrValentaImg img {
   max-width: 30%;
 }
-#FlexibleIntegration #trustedByThousands .container .row .petrValenta p {
+#trustedByThousands .container .row .petrValenta p {
   font-weight: 600;
   margin-top: 5px;
 }
-#FlexibleIntegration #trustedByThousands .container .row .petrValenta span {
+#trustedByThousands .container .row .petrValenta span {
   text-align: center;
   color: grey;
 }
-#FlexibleIntegration #trustedByThousands .container .row .IlpoLehtola {
+#trustedByThousands .container .row .IlpoLehtola {
   padding-bottom: 30px;
   text-align: center;
 }
-#FlexibleIntegration #trustedByThousands .container .row .IlpoLehtola .IlpoLehtolaImg {
+#trustedByThousands .container .row .IlpoLehtola .IlpoLehtolaImg {
   padding: 20px;
 }
-#FlexibleIntegration #trustedByThousands .container .row .IlpoLehtola .IlpoLehtolaImg img {
+#trustedByThousands .container .row .IlpoLehtola .IlpoLehtolaImg img {
   max-width: 30%;
 }
-#FlexibleIntegration #trustedByThousands .container .row .IlpoLehtola p {
+#trustedByThousands .container .row .IlpoLehtola p {
   font-weight: 600;
   margin-top: 5px;
 }
-#FlexibleIntegration #trustedByThousands .container .row .IlpoLehtola span {
+#trustedByThousands .container .row .IlpoLehtola span {
   text-align: center;
   color: grey;
 }
-#FlexibleIntegration #trustedByThousands .container .row .ZsoltTompe {
+#trustedByThousands .container .row .ZsoltTompe {
   padding-bottom: 30px;
   text-align: center;
 }
-#FlexibleIntegration #trustedByThousands .container .row .ZsoltTompe .ZsoltTompeImg {
+#trustedByThousands .container .row .ZsoltTompe .ZsoltTompeImg {
   padding: 20px;
 }
-#FlexibleIntegration #trustedByThousands .container .row .ZsoltTompe .ZsoltTompeImg img {
+#trustedByThousands .container .row .ZsoltTompe .ZsoltTompeImg img {
   max-width: 30%;
 }
-#FlexibleIntegration #trustedByThousands .container .row .ZsoltTompe p {
+#trustedByThousands .container .row .ZsoltTompe p {
   font-weight: 600;
   margin-top: 5px;
 }
-#FlexibleIntegration #trustedByThousands .container .row .ZsoltTompe span {
+#trustedByThousands .container .row .ZsoltTompe span {
   text-align: center;
   color: grey;
 }
-#FlexibleIntegration #AvatarSec {
+
+#AvatarSec {
   width: 100%;
 }
-#FlexibleIntegration #AvatarSec .container .row .avatarIcon img {
+#AvatarSec .container .row .avatarIcon img {
   max-width: 100%;
   padding: 20px;
 }
-#FlexibleIntegration #formSec {
+
+#formSec {
   width: 100%;
   background-image: url(/img/help-bg.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
-#FlexibleIntegration #formSec .container .row .formrow {
+#formSec .container .row .formrow {
   text-align: center;
   padding: 30px;
 }
-#FlexibleIntegration #formSec .container .row .formrow h1 {
+#formSec .container .row .formrow h1 {
   font-size: 30px;
   font-weight: 200;
   color: white;
 }
-#FlexibleIntegration #formSec .container .row .formrow h5 {
+#formSec .container .row .formrow h5 {
   color: white;
   font-weight: 400;
 }
-#FlexibleIntegration #formSec .container .row .MyForm {
+#formSec .container .row .MyForm {
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: transparent;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid grey;
+  border: 3px solid rgb(255, 136, 0);
   padding-top: 20px;
   width: 40%;
   margin: auto;
   transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
 }
-#FlexibleIntegration #formSec .container .row .MyForm #contactForm {
+#formSec .container .row .MyForm #contactForm {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-#FlexibleIntegration #formSec .container .row .MyForm input {
+#formSec .container .row .MyForm input {
   padding: 5px;
   outline: none;
   height: 35px;
   width: auto;
   border-radius: 5px;
-  border: 0.2px solid grey;
+  border: 2px solid green;
+  background-color: transparent;
 }
-#FlexibleIntegration #formSec .container .row .MyForm textarea {
+#formSec .container .row .MyForm input[required], #formSec .container .row .MyForm textarea[required] {
+  border-color: rgb(5, 163, 29);
+}
+#formSec .container .row .MyForm input::placeholder, #formSec .container .row .MyForm textarea::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required]::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required] {
+  border-color: #3DB554;
+}
+#formSec .container .row textarea {
   padding: 8px;
   margin-bottom: 16px;
   outline: none;
   border-radius: 5px;
-  border: 0.2px solid grey;
+  border: 2px solid green;
+  background-color: transparent;
 }
-#FlexibleIntegration #formSec .container .row .MyForm .formbtn {
+#formSec .container .row .formbtn {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
-#FlexibleIntegration #formSec .container .row .MyForm .formbtn button {
+#formSec .container .row .formbtn button {
   padding: 15px 10px 15px 10px;
   border: none;
   border-radius: 30px;
@@ -500,151 +835,69 @@ header .collapseDiv ul {
   color: white;
   font-weight: 500;
 }
-#FlexibleIntegration #formSec .container .row .MyForm .formbtn button:hover {
+#formSec .container .row .formbtn button:hover {
   box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
   transition: 0.2s;
 }
-#FlexibleIntegration #formSec .container .row .MyForm:hover {
+#formSec .container .MyForm:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-#FlexibleIntegration #formSec .container .row .MyForm:active {
+#formSec .container .MyForm:active {
   transform: translateY(0) scale(1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-#FlexibleIntegration #formSec .container .row p {
+#formSec .container p {
   padding-top: 30px;
   text-align: center;
   color: rgb(255, 255, 255);
   padding-bottom: 30px;
 }
-#FlexibleIntegration #formSec {
-  width: 100%;
-  background-image: url(/img/help-bg.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-}
-#FlexibleIntegration #formSec .container .row .formrow {
-  text-align: center;
-  padding: 30px;
-}
-#FlexibleIntegration #formSec .container .row .formrow h1 {
-  font-size: 30px;
-  font-weight: 200;
-  color: white;
-}
-#FlexibleIntegration #formSec .container .row .formrow h5 {
-  color: white;
-  font-weight: 400;
-}
-#FlexibleIntegration #formSec .container .row .MyForm {
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid grey;
-  padding-top: 20px;
-  width: 40%;
-  margin: auto;
-  transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
-}
-#FlexibleIntegration #formSec .container .row .MyForm #contactForm {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-#FlexibleIntegration #formSec .container .row .MyForm input {
-  padding: 5px;
-  outline: none;
-  height: 35px;
-  width: auto;
-  border-radius: 5px;
-  border: 0.2px solid grey;
-}
-#FlexibleIntegration #formSec .container .row .MyForm textarea {
-  padding: 8px;
-  margin-bottom: 16px;
-  outline: none;
-  border-radius: 5px;
-  border: 0.2px solid grey;
-}
-#FlexibleIntegration #formSec .container .row .MyForm .formbtn {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-#FlexibleIntegration #formSec .container .row .MyForm .formbtn button {
-  padding: 15px 10px 15px 10px;
-  border: none;
-  border-radius: 30px;
-  background-color: #3DB554;
-  box-shadow: 0 0 25px #3DB554;
-  color: white;
-  font-weight: 500;
-}
-#FlexibleIntegration #formSec .container .row .MyForm .formbtn button:hover {
-  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
-  transition: 0.2s;
-}
-#FlexibleIntegration #formSec .container .row .MyForm:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-#FlexibleIntegration #formSec .container .row .MyForm:active {
-  transform: translateY(0) scale(1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-#FlexibleIntegration #formSec .container .row p {
-  padding-top: 30px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  padding-bottom: 30px;
-}
-#FlexibleIntegration #appsMoreHelp {
+
+#appsMoreHelp {
   width: 100%;
 }
-#FlexibleIntegration #appsMoreHelp .container .row .more h5 {
+#appsMoreHelp .container .row .more h5 {
   color: #3DB554;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#FlexibleIntegration #appsMoreHelp .container .row .more p {
+#appsMoreHelp .container .row .more p {
   color: grey;
   display: flex;
   flex-direction: column;
 }
-#FlexibleIntegration #appsMoreHelp .container .row .more a {
+#appsMoreHelp .container .row .more a {
   text-decoration: none;
   /* Alt çizgiyi kaldır */
   color: inherit;
   /* Bağlantının rengini miras al */
 }
-#FlexibleIntegration #appsMoreHelp .container .row .more .more a:hover {
+#appsMoreHelp .container .row .more .more a:hover {
   text-decoration: underline;
   /* Hover durumunda alt çizgiyi ekler */
 }
-#FlexibleIntegration #appsMoreHelp .container .row .helps h5 {
+#appsMoreHelp .container .row .helps h5 {
   color: #3DB554;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#FlexibleIntegration #appsMoreHelp .container .row .helps p {
+#appsMoreHelp .container .row .helps p {
   color: grey;
   display: flex;
   flex-direction: column;
 }
-#FlexibleIntegration #appsMoreHelp .container .row .helps a {
+#appsMoreHelp .container .row .helps a {
   text-decoration: none;
   /* Alt çizgiyi kaldır */
   color: inherit;
   /* Bağlantının rengini miras al */
 }
-#FlexibleIntegration #appsMoreHelp .container .row .helps .more a:hover {
+#appsMoreHelp .container .row .helps .more a:hover {
   text-decoration: underline;
   /* Hover durumunda alt çizgiyi ekler */
 }
-#FlexibleIntegration #appsMoreHelp .container .row .icon {
+#appsMoreHelp .container .row .icon {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -652,26 +905,20 @@ header .collapseDiv ul {
   /* İkonları yatayda hizala */
   gap: 20px;
 }
-#FlexibleIntegration #appsMoreHelp .container .row .icon i {
+#appsMoreHelp .container .row .icon i {
   padding-bottom: 20px;
 }
-#FlexibleIntegration #appsMoreHelp .container .row .icon a {
+#appsMoreHelp .container .row .icon a {
   text-decoration: none;
   /* Alt çizgiyi kaldır */
   color: inherit;
   /* Bağlantının rengini miras al */
 }
-#FlexibleIntegration #appsMoreHelp {
-  width: 100%;
-  background-color: red;
-}
-#FlexibleIntegration #appsMoreHelp .container .row .more h5 {
-  color: #3DB554;
-  font-size: 50px;
-}
 
 footer {
   width: 100%;
+  padding-top: 30px;
+  background-color: #F6F7F8;
 }
 footer .container .row .footerRow ul {
   list-style: none;
@@ -683,270 +930,4 @@ footer .container .row .footerRow ul {
   display: flex;
   /* Liste öğelerini yan yana sırala */
   gap: 25px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header {
-  width: 100%;
-}
-header .collapseDiv ul {
-  margin: auto;
-  justify-content: space-between;
-  gap: 10px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-#regSec {
-  width: 100%;
-  height: 600px;
-  background-image: url(/img/hero-bg.jpg);
-  background-attachment: fixed;
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
-  padding: 30px;
-}
-#regSec .container .row .regImg {
-  padding-top: 30px;
-  align-items: center;
-  justify-content: center;
-}
-#regSec .container .row .regImg img {
-  max-width: 100%;
-  padding-top: 30px;
-}
-#regSec .container .row #registerForm {
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  gap: 15px;
-  border-radius: 30px;
-}
-#regSec .container .row #registerForm select {
-  border-radius: 10px;
-  outline: none;
-  padding: 8px;
-}
-#regSec .container .row #registerForm input {
-  padding: 5px;
-  outline: none;
-  height: 35px;
-  width: auto;
-  border-radius: 10px;
-  border: 0.2px solid grey;
-  display: flex;
-  gap: 20px;
-}
-#regSec .container .row #registerForm input #companyName {
-  padding-top: 80px;
-}
-#regSec .container .row .formbtn {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-#regSec .container .row .formbtn button {
-  padding: 10px 15px 10px 15px;
-  border: none;
-  border-radius: 30px;
-  background-color: #3DB554;
-  box-shadow: 0 0 25px #3DB554;
-  color: white;
-  font-weight: 500;
-}
-#regSec .container .row .formbtn button:hover {
-  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
-  transition: 0.2s;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header {
-  width: 100%;
-}
-header .collapseDiv ul {
-  margin: auto;
-  justify-content: space-between;
-  gap: 10px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-#modernMeeting {
-  width: 100%;
-  height: 400px;
-  background-image: url(/img/product-bg.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-size: cover;
-}
-#modernMeeting .container .row .modernMeetingText {
-  padding-top: 30px;
-}
-#modernMeeting .container .row .modernMeetingText h3 {
-  color: white;
-  padding-top: 30px;
-}
-#modernMeeting .container .row .modernMeetingText h5 {
-  color: rgb(189, 189, 189);
-  padding-top: 20px;
-  font-weight: 200;
-}
-#modernMeeting .container .row .modernMeetingText .modernButton {
-  text-align: center;
-  padding-top: 30px;
-}
-#modernMeeting .container .row .modernMeetingText .modernButton button {
-  padding: 10px 15px 10px 15px;
-  border: none;
-  border-radius: 30px;
-  background-color: rgb(255, 136, 0);
-  box-shadow: 0 0 25px rgb(255, 136, 0);
-  color: white;
-  font-weight: 500;
-}
-#modernMeeting .container .row .modernMeetingText .modernButton button:hover {
-  box-shadow: 0 0 5px rgb(255, 136, 0), 0 0 50px rgb(255, 136, 0);
-  transition: 0.2s;
-}
-#modernMeeting .container .row .modernMeetingImg {
-  padding-top: 30px;
-}
-#modernMeeting .container .row .modernMeetingImg img {
-  padding-top: 30px;
-  max-width: 100%;
-}
-
-#cloudOnprem {
-  width: 100%;
-}
-#cloudOnprem .container .row .cloudText {
-  text-align: center;
-  padding-top: 30px;
-}
-#cloudOnprem .container .row .cloudText h4 {
-  color: #3DB554;
-  font-weight: 200;
-}
-#cloudOnprem .container .row .cloudLogo {
-  text-align: center;
-}
-#cloudOnprem .container .row .cloudLogo img {
-  max-width: 30%;
-  padding: 20px;
-}
-#cloudOnprem .container .row .cloudLogo h3 {
-  color: #33495C;
-  font-weight: 700;
-  padding-bottom: 20px;
-}
-#cloudOnprem .container .row .cloudLogo p {
-  color: #33495C;
-}
-#cloudOnprem .container .row .cloudLogo .divIcon {
-  padding-top: 20px;
-  margin: 20px;
-  justify-content: space-between;
-}
-#cloudOnprem .container .row .buttonDiv {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
-#cloudOnprem .container .row .buttonDiv button {
-  padding: 10px 15px 10px 15px;
-  border: none;
-  border-radius: 30px;
-  background-color: #3DB554;
-  box-shadow: 0 0 25px #3DB554;
-  color: white;
-  font-weight: 500;
-}
-#cloudOnprem .container .row .buttonDiv button:hover {
-  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
-  transition: 0.2s;
-}
-
-#basicSmart {
-  width: 100%;
-  padding-top: 30px;
-}
-#basicSmart .container .row .basicSmartText {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-#basicSmart .container .row .basicSmartText h1 {
-  color: rgb(255, 136, 0);
-  font-weight: 200;
-}
-#basicSmart .container .row .topFeatures img {
-  max-width: 100%;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-}
-#basicSmart .container .row .topFeatures h3 {
-  color: #3DB554;
-  padding-bottom: 30px;
-}
-#basicSmart .container .row .topFeatures p {
-  color: grey;
-}
-
-#addHockReservation {
-  width: 100%;
-}
-#addHockReservation .container .row .hockReservation h1 {
-  color: #3DB554;
-}
-#addHockReservation .container .row .hockReservation h3 {
-  color: #3DB554;
-}
-#addHockReservation .container .row .hockReservation p {
-  color: grey;
-}
-#addHockReservation .container .row .hockReservation .hockText {
-  display: flex;
-  gap: 20px;
-}
-#addHockReservation .container .row .hockReservation img {
-  max-width: 100%;
-  padding-bottom: 30px;
-}
-#addHockReservation .container .row .hockReservation h4 {
-  color: rgb(255, 136, 0);
-  font-weight: 300;
-}
-
-#confirmtionAndFullscreen {
-  width: 100%;
-}
-#confirmtionAndFullscreen .container .row .confirmationRow h1 {
-  color: #3DB554;
-}
-#confirmtionAndFullscreen .container .row .confirmationRow h3 {
-  color: #3DB554;
-}
-#confirmtionAndFullscreen .container .row .confirmationRow p {
-  color: grey;
-}
-#confirmtionAndFullscreen .container .row .confirmationRow img {
-  max-width: 100%;
-}
-#confirmtionAndFullscreen .container .row .confirmationRow h4 {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  color: rgb(255, 136, 0);
-  font-weight: 300;
 }

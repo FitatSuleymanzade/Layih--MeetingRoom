@@ -378,7 +378,7 @@ header {
 #FlexibleIntegration {
     width: 100%;
     padding-top: 30px;
-    background-color: #F6F7F8;
+    
 
     .container {
         .row {
@@ -386,43 +386,15 @@ header {
                 position: relative;
                 overflow: hidden;
                 height: 400px; 
-                background-color: red;
-                #imageSlider img {
+               
+               img {
                     max-width: 100%;
                 }
                 
-                #prevBtn,
-                #nextBtn {
-                    position: absolute;
-                    top: 50%;
-                    width: auto;
-                    padding: 16px;
-                    margin-top: -22px;
-                    color: white;
-                    font-weight: bold;
-                    font-size: 18px;
-                    transition: 0.6s ease;
-                    border: none;
-                    background-color: transparent;
-                }
+              
                 
-                #prevBtn:hover, #nextBtn:hover {
-                    background-color: rgba(0, 0, 0, 0.8);
-                }
-                
-                .detailButton {
-                    padding: 10px 20px;
-                    border: none;
-                    border-radius: 5px;
-                    background-color: rgb(255, 136, 0);
-                    color: white;
-                    cursor: pointer;
-                    transition: 0.3s;
-                }
-                
-                .detailButton:hover {
-                    background-color: rgba(255, 136, 0, 0.8);
-                }
+            }
+               
             .flexibleText {
 
                 h3 {
@@ -439,6 +411,7 @@ header {
 
                 p {
                     padding-top: 30px;
+                    color: grey;
                 }
 
                 span {
@@ -635,6 +608,11 @@ header {
 
 
 
+
+
+
+
+
 #formSec {
     width: 100%;
     background-image: url(/img/help-bg.jpg);
@@ -662,15 +640,15 @@ header {
             .MyForm {
                 align-items: center;
                 justify-content: center;
-                background-color: #fff;
+                background-color: transparent;
                 padding: 10px;
                 border-radius: 8px;
-                border: 1px solid grey;
+                border: 3px solid rgb(255, 136, 0);
                 padding-top: 20px;
                 width: 40%;
                 margin: auto;
                 transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
-
+                backdrop-filter: blur(10px);
                 #contactForm {
                     display: flex;
                     flex-direction: column;
@@ -683,8 +661,29 @@ header {
                     outline: none;
                     height: 35px;
                     width: auto;
-                    border-radius: 5px;
-                    border: 0.2px solid grey;
+                    border-radius: 5px ;
+                   border: 2px solid green;
+                    background-color: transparent;
+                    
+  
+                    }
+                    input[required], textarea[required] {
+                       
+                        // Bu stil, "required" özelliğine sahip input ve textarea elementlerini hedefler.
+                        border-color: rgb(5, 163, 29); // Border rengini beyaz yapabilirsiniz.
+                    }
+    
+                    input::placeholder, textarea::placeholder {
+                        // Bu stil, "placeholder" özelliğine sahip input ve textarea elementlerini hedefler.
+                        color: white; // Placeholder rengini beyaz yapabilirsiniz.
+                    }
+                    input[required]::placeholder {
+                        color: white;
+                    }
+    
+                    input[required] {
+                        border-color: #3DB554;
+                    }
                 }
 
                 textarea {
@@ -692,7 +691,8 @@ header {
                     margin-bottom: 16px;
                     outline: none;
                     border-radius: 5px;
-                    border: 0.2px solid grey
+                    border: 2px solid green;
+                    background-color: transparent;
                 }
 
                 .formbtn {
@@ -741,119 +741,7 @@ header {
 
         }
     }
-}
 
-
-
-
-
-#formSec {
-    width: 100%;
-    background-image: url(/img/help-bg.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-
-    .container {
-        .row {
-            .formrow {
-                text-align: center;
-                padding: 30px;
-
-                h1 {
-                    font-size: 30px;
-                    font-weight: 200;
-                    color: white;
-                }
-
-                h5 {
-                    color: white;
-                    font-weight: 400;
-                }
-            }
-
-            .MyForm {
-                align-items: center;
-                justify-content: center;
-                background-color: #fff;
-                padding: 10px;
-                border-radius: 8px;
-                border: 1px solid grey;
-                padding-top: 20px;
-                width: 40%;
-                margin: auto;
-                transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
-
-                #contactForm {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-
-                }
-
-                input {
-                    padding: 5px;
-                    outline: none;
-                    height: 35px;
-                    width: auto;
-                    border-radius: 5px;
-                    border: 0.2px solid grey;
-                }
-
-                textarea {
-                    padding: 8px;
-                    margin-bottom: 16px;
-                    outline: none;
-                    border-radius: 5px;
-                    border: 0.2px solid grey
-                }
-
-                .formbtn {
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-
-                    text-align: center;
-
-                    button {
-
-                        padding: 15px 10px 15px 10px;
-                        border: none;
-                        border-radius: 30px;
-                        background-color: #3DB554;
-                        box-shadow: 0 0 25px #3DB554;
-
-                        color: white;
-                        font-weight: 500;
-
-                    }
-
-                    button:hover {
-                        box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
-                        transition: 0.2s;
-                    }
-                }
-
-            }
-
-            .MyForm:hover {
-                transform: translateY(-5px) scale(1.05);
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            }
-
-            .MyForm:active {
-                transform: translateY(0) scale(1);
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-
-            p {
-                padding-top: 30px;
-                text-align: center;
-                color: rgb(255, 255, 255);
-                padding-bottom: 30px;
-            }
-
-        }
-    }
-}
 
 
 
@@ -948,29 +836,17 @@ header {
 }
 
 
-#appsMoreHelp{
-    width: 100%;
-    background-color: red;
-    .container {
-       .row{
-        .more{
-            h5{
-             color: #3DB554;
-             font-size: 50px;
-            }
-        }
-       }
-    }
-}
 
 
 
 
 
-}
+
 
 footer{
     width: 100%;
+    padding-top: 30px;
+    background-color: #F6F7F8;
  .container{
     .row{
         .footerRow ul{

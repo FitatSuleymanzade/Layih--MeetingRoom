@@ -137,3 +137,39 @@ document.querySelector('.MyForm').addEventListener('click', function () {
 });
 
 
+
+
+
+
+
+
+
+ // JavaScript kodlarını buraya ekleyebilirsiniz
+ document.addEventListener('DOMContentLoaded', function () {
+    // API'dan verileri çekmek için örnek bir URL (gerçek API endpointinizi kullanmalısınız)
+    const apiUrl = 'http://localhost:3000/posts';
+
+    // digitalImg div'ine ürün listesini ekleme
+    function populateProductList(products) {
+      const productListDiv = document.getElementById('productList');
+      products.forEach(product => {
+        const productDiv = document.createElement('div');
+        productDiv.innerHTML = `<h3>${product.name}</h3><p>${product.description}</p><div class="digitalBtn"><button data-id="${product.id}">Learn more</button></div>`;
+        productListDiv.appendChild(productDiv);
+      });
+    }
+
+    // API'dan veri çekme
+    fetch('http://localhost:3000/posts')
+      .then(response => response.json())
+      .then(data => populateProductList(data))
+      .catch(error => console.error('Error fetching data:', error));
+
+    // Learn more butonlarına click event ekleme
+    document.addEventListener('click', function (event) {
+      if (event.target.tagName === 'BUTTON' && event.target.dataset.id) {
+        const productId = event.target.dataset.id;
+        window.location.href = `devices.html?id=${productId}`; // device.html sayfasına yönlendirme
+      }
+    });
+  });

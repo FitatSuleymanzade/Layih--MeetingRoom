@@ -230,3 +230,93 @@ header {
         }
     }
 }
+
+
+#roomVayfinder{
+    width: 100%;
+    background-color: #F6F7F8;
+    padding-top: 30px;
+    .container{
+        .row{
+            .vayfinderImg{
+                padding-top: 30px;
+                
+                img{
+                    max-width: 100%;
+                }
+            }
+            .vayfinderText{
+              
+                
+                    h3{
+                        color: #3DB554;
+                        padding-bottom: 20px;
+                    }
+                  
+                
+                p{
+                    color: grey;
+                }
+                    h6{
+                        padding-top: 10px;
+                        color: rgb(255, 136, 0);
+                        font-weight: 200;
+                        padding-bottom: 10px;
+                    }
+                
+            }
+            .vayFinderbtn{
+                
+                padding-top: 25px;
+                padding-bottom: 30px;
+                button {
+
+                    padding: 10px 15px 10px 15px;
+                    border: none;
+                    border-radius: 30px;
+                    background-color: rgb(255, 136, 0);
+                    box-shadow: 0 0 25px  rgb(255, 136, 0);
+
+                    color: white;
+                    font-weight: 500;
+
+                }
+
+                button:hover {
+                    box-shadow: 0 0 5px  rgb(255, 136, 0), 0 0 50px rgb(255, 136, 0);
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}
+
+
+
+#flexibleTable{
+    width: 100%;
+    .container{
+        .row{
+            .tableee{
+                padding-top: 30px;
+                h1{
+                    text-align: center;
+                    color:  rgb(255, 136, 0);
+                    font-weight: 200;
+                }
+                p{
+                    text-align: center;
+                    color: grey;
+                    padding-bottom: 30px;
+                }
+            }
+
+            .table-bordered{
+th{
+    color: #3DB554;
+    font-weight: 400;
+}
+            }
+        }
+    }
+}
