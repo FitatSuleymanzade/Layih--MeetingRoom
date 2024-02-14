@@ -88,6 +88,17 @@ header {
 }
 
 
+@media only screen and (max-width: 992px) {
+    .row {
+        .meetingImg{
+img{
+    visibility: hidden !important;
+}
+        }
+
+    }
+  }
+  
 
 #MakeYourWorkplace {
     width: 100%;
@@ -219,7 +230,28 @@ header {
         }
     }
 }
+@media only screen and (max-width: 600px) {
+    .row {
+        .meetingRow{
+h4{
+    font-size: 20px !important;
+}
+        }
 
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .row {
+        .meetingRow{
+img{
+    max-width: 80px !important;
+}
+        }
+
+    }
+  }
 
 
 #tableSec {
@@ -369,6 +401,16 @@ header {
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .row {
+        .connectivityImg{
+img{
+    max-width: 60% !important;
+}
+        }
+
+    }
+  }
 
 
 
@@ -606,6 +648,16 @@ header {
 }
 
 
+@media only screen and (max-width: 400px) {
+    .row {
+        .avatarIcon{
+img{
+    max-width: 60% !important;
+}
+        }
+
+    }
+  }
 
 
 
@@ -669,13 +721,13 @@ header {
                     }
                     input[required], textarea[required] {
                        
-                        // Bu stil, "required" özelliğine sahip input ve textarea elementlerini hedefler.
-                        border-color: rgb(5, 163, 29); // Border rengini beyaz yapabilirsiniz.
+                      
+                        border-color: rgb(5, 163, 29);
                     }
     
                     input::placeholder, textarea::placeholder {
-                        // Bu stil, "placeholder" özelliğine sahip input ve textarea elementlerini hedefler.
-                        color: white; // Placeholder rengini beyaz yapabilirsiniz.
+                       
+                        color: white; 
                     }
                     input[required]::placeholder {
                         color: white;
@@ -744,7 +796,17 @@ header {
 
 
 
-
+    @media only screen and (max-width: 660px) {
+        .row {
+            .formbtn{
+   button{
+        width: 60% !important;
+        font-size: 10px;
+    }
+            }
+    
+        }
+      }
 
 
 

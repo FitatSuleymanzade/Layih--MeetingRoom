@@ -416,6 +416,11 @@ header .collapseDiv ul {
   transition: transform 0.9s ease;
 }
 
+@media only screen and (max-width: 992px) {
+  .row .meetingImg img {
+    visibility: hidden !important;
+  }
+}
 #MakeYourWorkplace {
   width: 100%;
 }
@@ -514,6 +519,16 @@ header .collapseDiv ul {
   transition: 0.2s;
 }
 
+@media only screen and (max-width: 600px) {
+  .row .meetingRow h4 {
+    font-size: 20px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .row .meetingRow img {
+    max-width: 80px !important;
+  }
+}
 #tableSec {
   width: 100%;
   background-color: #F7F8F9;
@@ -613,6 +628,11 @@ header .collapseDiv ul {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 900px) {
+  .row .connectivityImg img {
+    max-width: 60% !important;
+  }
+}
 #FlexibleIntegration {
   width: 100%;
   padding-top: 30px;
@@ -755,6 +775,11 @@ header .collapseDiv ul {
   padding: 20px;
 }
 
+@media only screen and (max-width: 400px) {
+  .row .avatarIcon img {
+    max-width: 60% !important;
+  }
+}
 #formSec {
   width: 100%;
   background-image: url(/img/help-bg.jpg);
@@ -854,6 +879,12 @@ header .collapseDiv ul {
   padding-bottom: 30px;
 }
 
+@media only screen and (max-width: 660px) {
+  .row .formbtn button {
+    width: 60% !important;
+    font-size: 10px;
+  }
+}
 #appsMoreHelp {
   width: 100%;
 }
