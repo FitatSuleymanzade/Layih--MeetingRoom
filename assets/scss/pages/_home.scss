@@ -17,8 +17,37 @@ header {
 
         }
 
+
+    a:hover{
+        color: #3DB554;
+    }
+
+   
+
+
+    .btn {
+        padding-top: 30px;
+
+       
+            padding: 5px 10px 5px 10px;
+            border: none;
+            border-radius: 30px;
+            background-color: #3DB554;
+            box-shadow: 0 0 5px #3DB554, 0 0 25px #3DB554;
+
+            color: white;
+            font-weight: 500;
+            font-size: 13px;
+       
+
+        button:hover {
+            box-shadow: 0 0 5px #3DB554, 0 0 25px #3DB554, 0 0 50px #3DB554;
+            transition: 0.2s;
+        }
     }
 }
+    }
+
 
 #MeetingAndConference {
     width: 100%;
@@ -796,18 +825,35 @@ img{
 
 
 
-    @media only screen and (max-width: 660px) {
+    @media only screen and (max-width: 600px) {
         .row {
             .formbtn{
    button{
         width: 60% !important;
-        font-size: 10px;
+        font-size: 9px;
+        padding: 5px 5px 5px 5px !important;
     }
             }
     
         }
       }
 
+
+      @media only screen and (max-width: 660px) {
+        .row {
+            .MyForm{
+   input{
+        width: 90% !important;
+        font-size: 10px;
+    }
+    textarea{
+        width: 90% !important;
+        font-size: 10px;
+    }
+            }
+    
+        }
+      }
 
 
 
@@ -925,3 +971,35 @@ footer{
     }
  }
 }
+
+
+
+@media only screen and (max-width: 660px) {
+    .row {
+        .footerRow{
+ul{
+    li{
+       
+        font-size: 10px;
+    } 
+}
+ }
+
+    }
+  }
+  @media only screen and (max-width: 660px) {
+    .row {
+        .footerAkurlee{
+
+    p{
+       
+        font-size: 11px;
+    } 
+    span{
+        font-size: 11px;
+    }
+}
+ }
+
+    }
+  
