@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     width: 100%;
 
@@ -19,231 +25,85 @@ header {
    
 
 
-   
 }
     }
 
 
 
-
-#pricing{
-    width: 100%;
-    .container{
-        .row{
-            .pricingText{
-                text-align: center;
-                padding-top: 30px;
-                h3{
-                    color: #3DB554;
-                    font-weight: 400;
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                }
-                p{
-                    padding-top: 10px;
-                    color: rgb(116, 115, 115);
-                }
-                
-            }
-
-            .pricingRow{
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                img{
-                    max-width: 15%;
-                    padding-top: 30px;
-                    padding-bottom: 20px;
-                    
-                }
-                h4{
-                    color: rgb(74, 74, 74);
-                    text-align: center;
-                    padding-bottom: 15px;
-                }
-               
-              h3{
-                color: #3DB554;
-                font-weight: 700;
-                padding-top: 15px;
-              }
-              span{
-               
-                color: grey;
-                font-weight: 700;
-              }
-              h6{
-                color:grey;
-                font-weight: 700;
-            }
-              code{
-                color: #3DB554;
-              }
-              .pricingBtn {
-                padding-top: 30px;
-                padding-bottom: 20px;
-
-                text-align: center;
-
-                button {
-
-                    padding: 10px 10px 10px 10px;
-                    border: none;
-                    border-radius: 30px;
-                    background-color: #3DB554;
-                    box-shadow: 0 0 25px #3DB554;
-font-size: 13px;
-                    color: white;
-                    font-weight: 500;
-
-                }
-
-                button:hover {
-                    box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
-                    transition: 0.2s;
-                }
-            }
-            }
-
-
-            .pricingtxt{
-                padding: 20px;
-                border: 1px solid #3DB554;
-                .pricingh6{
-                    padding-top: 20px;
-                    border: 1px solid #3DB554;
-                
-                    padding: 20px;
-                    color: grey;
-                    text-align: center;
-                }
-                p{
-                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                }
-            }
-
-
-
-
-        }
-    }
-}
-
-
-
-
-#compare{
-    width: 100%;
-    .container{
-        .row{
-            .compareText{
-                text-align: center;
-                padding-top: 30px;
-                h1{
-                    color: #3DB554;
-                    font-weight: 600;
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                }
-                p{
-                    padding-top: 15px;
-                    color: grey;
-                }
-                .compareBtn {
-                    padding-top: 30px;
-                    padding-bottom: 20px;
-    
-                    text-align: center;
-    
-                    button {
-    
-                        padding: 10px 10px 10px 10px;
-                        border: none;
-                        border-radius: 30px;
-                        background-color: #3DB554;
-                        box-shadow: 0 0 25px #3DB554;
-    font-size: 13px;
-                        color: white;
-                        font-weight: 500;
-    
-                    }
-    
-                    button:hover {
-                        box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
-                        transition: 0.2s;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-    #roomVayfinder{
+    #ourteam{
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
         background-color: #F6F7F8;
         padding-top: 30px;
         .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             .row{
-                .vayfinderImg{
-                    padding-top: 30px;
-                    
-                    img{
-                        max-width: 100%;
+                .ourteamtext{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 15px;
+                    h3{
+                        font-weight: 700;
+                        color: #3DB554;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                
                     }
-                }
-                .vayfinderText{
-                  
-                    
-                        h3{
-                            color: #3DB554;
-                            padding-bottom: 20px;
-                        }
-                      
-                    
-                    p{
+                    span{
                         color: grey;
                     }
-                        h6{
-                            padding-top: 10px;
-                            color: rgb(255, 136, 0);
-                            font-weight: 200;
-                            padding-bottom: 10px;
-                        }
-                    
                 }
-                .vayFinderbtn{
-                    
-                    padding-top: 25px;
-                    padding-bottom: 30px;
-                    button {
-    
-                        padding: 10px 10px 10px 10px;
-                        border: none;
-                        border-radius: 30px;
-                        background-color: rgb(255, 136, 0);
-                        box-shadow: 0 0 25px  rgb(255, 136, 0);
-                        font-size: 13px;
-                        color: white;
-                        font-weight: 500;
-    
+                .team{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 10px;
+                    margin-bottom: 30px;
+                    padding-top: 30px;
+                    img{
+                     
+                        padding: 10px 10px 20px 10px;
+                    max-width: 100%;
+                        border: 2px solid #3DB554;
+                        border-radius: 5px;
                     }
-    
-                    button:hover {
-                        box-shadow: 0 0 5px  rgb(255, 136, 0), 0 0 50px rgb(255, 136, 0);
-                        transition: 0.2s;
+                    p{
+                        color: gray;
+                        padding-top: 15px;
+                        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                     }
+                }
+                .icons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px;
+                    margin-top: 15px;
                 }
             }
         }
     }
+    .team img {
+        transition: transform 0.3s ease-in-out;
+      }
     
-    
+      .team:hover img {
+        transform: scale(1.1); /* Adjust the scale factor as needed */
+      }
 
 
 
-
-
-
-    #formSec {
+      #formSec {
         width: 100%;
         background-image: url(/img/help-bg.jpg);
         background-attachment: fixed;
@@ -552,4 +412,10 @@ font-size: 13px;
     
         }
       
-    
+     
+      
+        
+       
+      
+      
+       

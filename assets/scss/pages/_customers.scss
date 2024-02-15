@@ -1,0 +1,149 @@
+
+#appsMoreHelp {
+    width: 100%;
+
+    .container {
+        .row {
+            .more {
+                h5 {
+                    color: #3DB554;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+
+                p {
+                    color: grey;
+                    display: flex;
+                    flex-direction: column;
+
+                }
+
+                a {
+                    text-decoration: none;
+                    
+                    color: inherit;
+                    
+                }
+
+                .more a:hover {
+                    text-decoration: underline;
+                  
+                }
+
+            }
+
+            .helps {
+                h5 {
+                    color: #3DB554;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+
+                p {
+                    color: grey;
+                    display: flex;
+                    flex-direction: column;
+
+                }
+
+                a {
+                    text-decoration: none;
+                   
+                    color: inherit;
+                  
+                }
+
+                .more a:hover {
+                    text-decoration: underline;
+                  
+                }
+            }
+
+            .icon {
+                padding-top: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               
+                gap: 20px;
+
+                i {
+                    padding-bottom: 20px;
+
+                }
+
+                a {
+                    text-decoration: none;
+                    
+                    color: inherit;
+                   
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    padding-top: 30px;
+    background-color: #F6F7F8;
+ .container{
+    .row{
+        .footerRow ul{
+            list-style: none;
+           
+            padding: 0;
+           
+            margin: 0;
+            
+            display: flex;
+            
+            gap: 25px;
+        }
+    }
+ }
+}
+
+
+
+@media only screen and (max-width: 660px) {
+    .row {
+        .footerRow{
+ul{
+    li{
+       
+        font-size: 10px;
+    } 
+}
+ }
+
+    }
+  }
+  @media only screen and (max-width: 660px) {
+    .row {
+        .footerAkurlee{
+
+    p{
+       
+        font-size: 11px;
+    } 
+    span{
+        font-size: 11px;
+    }
+}
+ }
+
+    }
+  
+ 
+  
+    

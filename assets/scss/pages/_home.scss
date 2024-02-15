@@ -830,7 +830,7 @@ img{
             .formbtn{
    button{
         width: 60% !important;
-        font-size: 9px;
+        font-size: 7px;
         padding: 5px 5px 5px 5px !important;
     }
             }
@@ -923,7 +923,7 @@ img{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                /* İkonları yatayda hizala */
+               
                 gap: 20px;
 
                 i {
@@ -933,9 +933,9 @@ img{
 
                 a {
                     text-decoration: none;
-                    /* Alt çizgiyi kaldır */
+                    
                     color: inherit;
-                    /* Bağlantının rengini miras al */
+                   
                 }
 
             }
@@ -959,13 +959,13 @@ footer{
     .row{
         .footerRow ul{
             list-style: none;
-            /* Liste işaretini kaldır */
+         
             padding: 0;
-            /* Liste içi boşluğu sıfırla */
+          
             margin: 0;
-            /* Liste kenar boşluğunu sıfırla */
+          
             display: flex;
-            /* Liste öğelerini yan yana sırala */
+           
             gap: 25px;
         }
     }
@@ -1003,3 +1003,10 @@ ul{
 
     }
   
+ 
+  
+    
+   
+  
+  
+   

@@ -158,6 +158,21 @@ header .collapseDiv ul {
   max-width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .row .modernMeetingImg img {
+    visibility: hidden !important;
+  }
+}
+@media only screen and (max-width: 345px) {
+  .row .modernMeetingText .modernButton button {
+    visibility: hidden !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .row .modernMeetingText .modernButton {
+    visibility: hidden !important;
+  }
+}
 #cloudOnprem {
   width: 100%;
 }
@@ -168,6 +183,7 @@ header .collapseDiv ul {
 #cloudOnprem .container .row .cloudText h4 {
   color: #3DB554;
   font-weight: 200;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #cloudOnprem .container .row .cloudLogo {
   text-align: center;
@@ -218,6 +234,7 @@ header .collapseDiv ul {
   padding-bottom: 30px;
 }
 #basicSmart .container .row .basicSmartText h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: rgb(255, 136, 0);
   font-weight: 200;
 }
@@ -331,8 +348,9 @@ header .collapseDiv ul {
 }
 #flexibleTable .container .row .tableee h1 {
   text-align: center;
-  color: rgb(255, 136, 0);
+  color: #3DB554;
   font-weight: 200;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #flexibleTable .container .row .tableee p {
   text-align: center;
@@ -344,6 +362,213 @@ header .collapseDiv ul {
   font-weight: 400;
 }
 
+#formSec {
+  width: 100%;
+  background-image: url(/img/help-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#formSec .container .row .formrow {
+  text-align: center;
+  padding: 30px;
+}
+#formSec .container .row .formrow h1 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+}
+#formSec .container .row .formrow h5 {
+  color: white;
+  font-weight: 400;
+}
+#formSec .container .row .MyForm {
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid rgb(255, 136, 0);
+  padding-top: 20px;
+  width: 40%;
+  margin: auto;
+  transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+#formSec .container .row .MyForm #contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#formSec .container .row .MyForm input {
+  padding: 5px;
+  outline: none;
+  height: 35px;
+  width: auto;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: transparent;
+}
+#formSec .container .row .MyForm input[required], #formSec .container .row .MyForm textarea[required] {
+  border-color: rgb(5, 163, 29);
+}
+#formSec .container .row .MyForm input::placeholder, #formSec .container .row .MyForm textarea::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required]::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required] {
+  border-color: #3DB554;
+}
+#formSec .container .row textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: transparent;
+}
+#formSec .container .row .formbtn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#formSec .container .row .formbtn button {
+  padding: 15px 10px 15px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#formSec .container .row .formbtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+#formSec .container .MyForm:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#formSec .container .MyForm:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#formSec .container p {
+  padding-top: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .row .formbtn button {
+    width: 60% !important;
+    font-size: 7px;
+    padding: 5px 5px 5px 5px !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .MyForm input {
+    width: 90% !important;
+    font-size: 10px;
+  }
+  .row .MyForm textarea {
+    width: 90% !important;
+    font-size: 10px;
+  }
+}
+#appsMoreHelp {
+  width: 100%;
+}
+#appsMoreHelp .container .row .more h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .more p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .more a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+#appsMoreHelp .container .row .more .more a:hover {
+  text-decoration: underline;
+  /* Hover durumunda alt çizgiyi ekler */
+}
+#appsMoreHelp .container .row .helps h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .helps p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .helps a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+#appsMoreHelp .container .row .helps .more a:hover {
+  text-decoration: underline;
+  /* Hover durumunda alt çizgiyi ekler */
+}
+#appsMoreHelp .container .row .icon {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* İkonları yatayda hizala */
+  gap: 20px;
+}
+#appsMoreHelp .container .row .icon i {
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .icon a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+
+footer {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #F6F7F8;
+}
+footer .container .row .footerRow ul {
+  list-style: none;
+  /* Liste işaretini kaldır */
+  padding: 0;
+  /* Liste içi boşluğu sıfırla */
+  margin: 0;
+  /* Liste kenar boşluğunu sıfırla */
+  display: flex;
+  /* Liste öğelerini yan yana sırala */
+  gap: 25px;
+}
+
+@media only screen and (max-width: 660px) {
+  .row .footerRow ul li {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .footerAkurlee p {
+    font-size: 11px;
+  }
+  .row .footerAkurlee span {
+    font-size: 11px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -899,7 +1124,841 @@ header .collapseDiv .btn button:hover {
 @media only screen and (max-width: 600px) {
   .row .formbtn button {
     width: 60% !important;
-    font-size: 9px;
+    font-size: 7px;
+    padding: 5px 5px 5px 5px !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .MyForm input {
+    width: 90% !important;
+    font-size: 10px;
+  }
+  .row .MyForm textarea {
+    width: 90% !important;
+    font-size: 10px;
+  }
+}
+#appsMoreHelp {
+  width: 100%;
+}
+#appsMoreHelp .container .row .more h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .more p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .more a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+#appsMoreHelp .container .row .more .more a:hover {
+  text-decoration: underline;
+  /* Hover durumunda alt çizgiyi ekler */
+}
+#appsMoreHelp .container .row .helps h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .helps p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .helps a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+#appsMoreHelp .container .row .helps .more a:hover {
+  text-decoration: underline;
+  /* Hover durumunda alt çizgiyi ekler */
+}
+#appsMoreHelp .container .row .icon {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#appsMoreHelp .container .row .icon i {
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .icon a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #F6F7F8;
+}
+footer .container .row .footerRow ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+@media only screen and (max-width: 660px) {
+  .row .footerRow ul li {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .footerAkurlee p {
+    font-size: 11px;
+  }
+  .row .footerAkurlee span {
+    font-size: 11px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .collapseDiv ul {
+  margin: auto;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+header .collapseDiv a:hover {
+  color: #3DB554;
+}
+
+#LogSec {
+  width: 100%;
+  height: 600px;
+  background-image: url(/img/hero-bg.jpg);
+  background-attachment: fixed;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#LogSec .container .row .logImg {
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#LogSec .container .row .logImg img {
+  max-width: 100%;
+  padding-top: 30px;
+}
+#LogSec .container .row #loginForm {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  border-radius: 8px;
+  border: 3px solid rgb(255, 136, 0);
+  margin: auto;
+  transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+#LogSec .container .row #loginForm img {
+  max-width: 100%;
+}
+#LogSec .container .row #loginForm input {
+  padding: 5px;
+  outline: none;
+  height: 35px;
+  width: auto;
+  border-radius: 5px;
+  border: 2px solid #3DB554;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  gap: 20px;
+}
+#LogSec .container .row #loginForm input[required]::placeholder {
+  color: white;
+}
+#LogSec .container .row #loginForm input[required] {
+  border-color: #3DB554;
+}
+#LogSec .container .row .formbtn {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#LogSec .container .row .formbtn button {
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#LogSec .container .row .formbtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+
+header {
+  width: 100%;
+}
+header .collapseDiv ul {
+  margin: auto;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+header .collapseDiv a:hover {
+  color: #3DB554;
+}
+
+#pricing {
+  width: 100%;
+}
+#pricing .container .row .pricingText {
+  text-align: center;
+  padding-top: 30px;
+}
+#pricing .container .row .pricingText h3 {
+  color: #3DB554;
+  font-weight: 400;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#pricing .container .row .pricingText p {
+  padding-top: 10px;
+  color: rgb(116, 115, 115);
+}
+#pricing .container .row .pricingRow {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#pricing .container .row .pricingRow img {
+  max-width: 15%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+#pricing .container .row .pricingRow h4 {
+  color: rgb(74, 74, 74);
+  text-align: center;
+  padding-bottom: 15px;
+}
+#pricing .container .row .pricingRow h3 {
+  color: #3DB554;
+  font-weight: 700;
+  padding-top: 15px;
+}
+#pricing .container .row .pricingRow span {
+  color: grey;
+  font-weight: 700;
+}
+#pricing .container .row .pricingRow h6 {
+  color: grey;
+  font-weight: 700;
+}
+#pricing .container .row .pricingRow code {
+  color: #3DB554;
+}
+#pricing .container .row .pricingRow .pricingBtn {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#pricing .container .row .pricingRow .pricingBtn button {
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  font-size: 13px;
+  color: white;
+  font-weight: 500;
+}
+#pricing .container .row .pricingRow .pricingBtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+#pricing .container .row .pricingtxt {
+  padding: 20px;
+  border: 1px solid #3DB554;
+}
+#pricing .container .row .pricingtxt .pricingh6 {
+  padding-top: 20px;
+  border: 1px solid #3DB554;
+  padding: 20px;
+  color: grey;
+  text-align: center;
+}
+#pricing .container .row .pricingtxt p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#compare {
+  width: 100%;
+}
+#compare .container .row .compareText {
+  text-align: center;
+  padding-top: 30px;
+}
+#compare .container .row .compareText h1 {
+  color: #3DB554;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#compare .container .row .compareText p {
+  padding-top: 15px;
+  color: grey;
+}
+#compare .container .row .compareText .compareBtn {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#compare .container .row .compareText .compareBtn button {
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  font-size: 13px;
+  color: white;
+  font-weight: 500;
+}
+#compare .container .row .compareText .compareBtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+
+#roomVayfinder {
+  width: 100%;
+  background-color: #F6F7F8;
+  padding-top: 30px;
+}
+#roomVayfinder .container .row .vayfinderImg {
+  padding-top: 30px;
+}
+#roomVayfinder .container .row .vayfinderImg img {
+  max-width: 100%;
+}
+#roomVayfinder .container .row .vayfinderText h3 {
+  color: #3DB554;
+  padding-bottom: 20px;
+}
+#roomVayfinder .container .row .vayfinderText p {
+  color: grey;
+}
+#roomVayfinder .container .row .vayfinderText h6 {
+  padding-top: 10px;
+  color: rgb(255, 136, 0);
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+#roomVayfinder .container .row .vayFinderbtn {
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+#roomVayfinder .container .row .vayFinderbtn button {
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(255, 136, 0);
+  box-shadow: 0 0 25px rgb(255, 136, 0);
+  font-size: 13px;
+  color: white;
+  font-weight: 500;
+}
+#roomVayfinder .container .row .vayFinderbtn button:hover {
+  box-shadow: 0 0 5px rgb(255, 136, 0), 0 0 50px rgb(255, 136, 0);
+  transition: 0.2s;
+}
+
+#formSec {
+  width: 100%;
+  background-image: url(/img/help-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#formSec .container .row .formrow {
+  text-align: center;
+  padding: 30px;
+}
+#formSec .container .row .formrow h1 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+}
+#formSec .container .row .formrow h5 {
+  color: white;
+  font-weight: 400;
+}
+#formSec .container .row .MyForm {
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid rgb(255, 136, 0);
+  padding-top: 20px;
+  width: 40%;
+  margin: auto;
+  transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+#formSec .container .row .MyForm #contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#formSec .container .row .MyForm input {
+  padding: 5px;
+  outline: none;
+  height: 35px;
+  width: auto;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: transparent;
+}
+#formSec .container .row .MyForm input[required], #formSec .container .row .MyForm textarea[required] {
+  border-color: rgb(5, 163, 29);
+}
+#formSec .container .row .MyForm input::placeholder, #formSec .container .row .MyForm textarea::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required]::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required] {
+  border-color: #3DB554;
+}
+#formSec .container .row textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: transparent;
+}
+#formSec .container .row .formbtn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#formSec .container .row .formbtn button {
+  padding: 15px 10px 15px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#formSec .container .row .formbtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+#formSec .container .MyForm:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#formSec .container .MyForm:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#formSec .container p {
+  padding-top: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .row .formbtn button {
+    width: 60% !important;
+    font-size: 7px;
+    padding: 5px 5px 5px 5px !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .MyForm input {
+    width: 90% !important;
+    font-size: 10px;
+  }
+  .row .MyForm textarea {
+    width: 90% !important;
+    font-size: 10px;
+  }
+}
+#appsMoreHelp {
+  width: 100%;
+}
+#appsMoreHelp .container .row .more h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .more p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .more a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+#appsMoreHelp .container .row .more .more a:hover {
+  text-decoration: underline;
+  /* Hover durumunda alt çizgiyi ekler */
+}
+#appsMoreHelp .container .row .helps h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .helps p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .helps a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+#appsMoreHelp .container .row .helps .more a:hover {
+  text-decoration: underline;
+  /* Hover durumunda alt çizgiyi ekler */
+}
+#appsMoreHelp .container .row .icon {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* İkonları yatayda hizala */
+  gap: 20px;
+}
+#appsMoreHelp .container .row .icon i {
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .icon a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+
+footer {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #F6F7F8;
+}
+footer .container .row .footerRow ul {
+  list-style: none;
+  /* Liste işaretini kaldır */
+  padding: 0;
+  /* Liste içi boşluğu sıfırla */
+  margin: 0;
+  /* Liste kenar boşluğunu sıfırla */
+  display: flex;
+  /* Liste öğelerini yan yana sırala */
+  gap: 25px;
+}
+
+@media only screen and (max-width: 660px) {
+  .row .footerRow ul li {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .footerAkurlee p {
+    font-size: 11px;
+  }
+  .row .footerAkurlee span {
+    font-size: 11px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+.admin-panel {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.logoutBtn {
+  background-color: #c9302c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.logoutBtn:hover {
+  background-color: #d9534f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .collapseDiv ul {
+  margin: auto;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+header .collapseDiv a:hover {
+  color: #3DB554;
+}
+
+#ourteam {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  background-color: #F6F7F8;
+  padding-top: 30px;
+}
+#ourteam .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ourteam .container .row .ourteamtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+#ourteam .container .row .ourteamtext h3 {
+  font-weight: 700;
+  color: #3DB554;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#ourteam .container .row .ourteamtext span {
+  color: grey;
+}
+#ourteam .container .row .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+#ourteam .container .row .team img {
+  padding: 10px 10px 20px 10px;
+  max-width: 100%;
+  border: 2px solid #3DB554;
+  border-radius: 5px;
+}
+#ourteam .container .row .team p {
+  color: gray;
+  padding-top: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#ourteam .container .row .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.team img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.team:hover img {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+#formSec {
+  width: 100%;
+  background-image: url(/img/help-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#formSec .container .row .formrow {
+  text-align: center;
+  padding: 30px;
+}
+#formSec .container .row .formrow h1 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+}
+#formSec .container .row .formrow h5 {
+  color: white;
+  font-weight: 400;
+}
+#formSec .container .row .MyForm {
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid rgb(255, 136, 0);
+  padding-top: 20px;
+  width: 40%;
+  margin: auto;
+  transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+#formSec .container .row .MyForm #contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#formSec .container .row .MyForm input {
+  padding: 5px;
+  outline: none;
+  height: 35px;
+  width: auto;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: transparent;
+}
+#formSec .container .row .MyForm input[required], #formSec .container .row .MyForm textarea[required] {
+  border-color: rgb(5, 163, 29);
+}
+#formSec .container .row .MyForm input::placeholder, #formSec .container .row .MyForm textarea::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required]::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required] {
+  border-color: #3DB554;
+}
+#formSec .container .row textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: transparent;
+}
+#formSec .container .row .formbtn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#formSec .container .row .formbtn button {
+  padding: 15px 10px 15px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#formSec .container .row .formbtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+#formSec .container .MyForm:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#formSec .container .MyForm:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#formSec .container p {
+  padding-top: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .row .formbtn button {
+    width: 60% !important;
+    font-size: 7px;
     padding: 5px 5px 5px 5px !important;
   }
 }
@@ -1024,67 +2083,109 @@ header .collapseDiv a:hover {
   color: #3DB554;
 }
 
-#LogSec {
+#getInTouch {
   width: 100%;
-  height: 600px;
-  background-image: url(/img/hero-bg.jpg);
-  background-attachment: fixed;
-  max-width: 100%;
-  background-position: center;
-  background-size: cover;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
-#LogSec .container .row .logImg {
-  padding-top: 30px;
-  align-items: center;
-  justify-content: center;
-}
-#LogSec .container .row .logImg img {
-  max-width: 100%;
+#getInTouch .container .row .getintouchText {
   padding-top: 30px;
 }
-#LogSec .container .row #loginForm {
-  background-color: transparent;
+#getInTouch .container .row .getintouchText h1 {
+  color: #3DB554;
+}
+#getInTouch .container .row .getintouchText .getmessage {
   display: flex;
   flex-direction: column;
-  padding: 15px;
-  gap: 15px;
+}
+#getInTouch .container .row .getintouchText .getmessage p {
+  color: #33495C;
+  font-weight: 700;
+  padding-top: 10px;
+}
+#getInTouch .container .row .getintouchText .getmessage span {
+  color: grey;
+  font-weight: 300;
+}
+#getInTouch .container .getintouchImg {
+  padding-top: 30px;
+}
+#getInTouch .container .getintouchImg img {
+  max-width: 100%;
+}
+
+#formSec {
+  width: 100%;
+  background-image: url(/img/help-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#formSec .container .row .formrow {
+  text-align: center;
+  padding: 30px;
+}
+#formSec .container .row .formrow h1 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+}
+#formSec .container .row .formrow h5 {
+  color: white;
+  font-weight: 400;
+}
+#formSec .container .row .MyForm {
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 10px;
   border-radius: 8px;
   border: 3px solid rgb(255, 136, 0);
+  padding-top: 20px;
+  width: 40%;
   margin: auto;
   transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
   backdrop-filter: blur(10px);
-  color: white;
 }
-#LogSec .container .row #loginForm img {
-  max-width: 100%;
+#formSec .container .row .MyForm #contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-#LogSec .container .row #loginForm input {
+#formSec .container .row .MyForm input {
   padding: 5px;
   outline: none;
   height: 35px;
   width: auto;
   border-radius: 5px;
-  border: 2px solid #3DB554;
+  border: 2px solid green;
   background-color: transparent;
-  color: white;
-  display: flex;
-  gap: 20px;
 }
-#LogSec .container .row #loginForm input[required]::placeholder {
+#formSec .container .row .MyForm input[required], #formSec .container .row .MyForm textarea[required] {
+  border-color: rgb(5, 163, 29);
+}
+#formSec .container .row .MyForm input::placeholder, #formSec .container .row .MyForm textarea::placeholder {
   color: white;
 }
-#LogSec .container .row #loginForm input[required] {
+#formSec .container .row .MyForm input[required]::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required] {
   border-color: #3DB554;
 }
-#LogSec .container .row .formbtn {
-  align-items: center;
-  justify-content: center;
+#formSec .container .row textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: transparent;
+}
+#formSec .container .row .formbtn {
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
-#LogSec .container .row .formbtn button {
-  padding: 10px 15px 10px 15px;
+#formSec .container .row .formbtn button {
+  padding: 15px 10px 15px 10px;
   border: none;
   border-radius: 30px;
   background-color: #3DB554;
@@ -1092,13 +2193,588 @@ header .collapseDiv a:hover {
   color: white;
   font-weight: 500;
 }
-#LogSec .container .row .formbtn button:hover {
+#formSec .container .row .formbtn button:hover {
   box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
   transition: 0.2s;
 }
+#formSec .container .MyForm:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#formSec .container .MyForm:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#formSec .container p {
+  padding-top: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+}
 
+@media only screen and (max-width: 600px) {
+  .row .formbtn button {
+    width: 60% !important;
+    font-size: 7px;
+    padding: 5px 5px 5px 5px !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .MyForm input {
+    width: 90% !important;
+    font-size: 10px;
+  }
+  .row .MyForm textarea {
+    width: 90% !important;
+    font-size: 10px;
+  }
+}
+#appsMoreHelp {
+  width: 100%;
+}
+#appsMoreHelp .container .row .more h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .more p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .more a {
+  text-decoration: none;
+  color: inherit;
+}
+#appsMoreHelp .container .row .more .more a:hover {
+  text-decoration: underline;
+}
+#appsMoreHelp .container .row .helps h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .helps p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .helps a {
+  text-decoration: none;
+  color: inherit;
+}
+#appsMoreHelp .container .row .helps .more a:hover {
+  text-decoration: underline;
+}
+#appsMoreHelp .container .row .icon {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#appsMoreHelp .container .row .icon i {
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .icon a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #F6F7F8;
+}
+footer .container .row .footerRow ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+@media only screen and (max-width: 660px) {
+  .row .footerRow ul li {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .footerAkurlee p {
+    font-size: 11px;
+  }
+  .row .footerAkurlee span {
+    font-size: 11px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .collapseDiv ul {
+  margin: auto;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+header .collapseDiv a:hover {
+  color: #3DB554;
+}
+
+#getInTouch {
+  width: 100%;
+  padding-bottom: 30px;
+}
+#getInTouch .container .row .getintouchText {
+  padding-top: 30px;
+}
+#getInTouch .container .row .getintouchText h1 {
+  color: #3DB554;
+}
+#getInTouch .container .row .getintouchText .getmessage {
+  display: flex;
+  flex-direction: column;
+}
+#getInTouch .container .row .getintouchText .getmessage p {
+  color: #33495C;
+  font-weight: 700;
+  padding-top: 10px;
+}
+#getInTouch .container .row .getintouchText .getmessage span {
+  color: grey;
+  font-weight: 300;
+}
+#getInTouch .container .getintouchImg {
+  padding-top: 30px;
+}
+#getInTouch .container .getintouchImg img {
+  max-width: 100%;
+}
+
+#formSec {
+  width: 100%;
+  background-image: url(/img/help-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#formSec .container .row .formrow {
+  text-align: center;
+  padding: 30px;
+}
+#formSec .container .row .formrow h1 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+}
+#formSec .container .row .formrow h5 {
+  color: white;
+  font-weight: 400;
+}
+#formSec .container .row .MyForm {
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid rgb(255, 136, 0);
+  padding-top: 20px;
+  width: 40%;
+  margin: auto;
+  transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+#formSec .container .row .MyForm #contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#formSec .container .row .MyForm input {
+  padding: 5px;
+  outline: none;
+  height: 35px;
+  width: auto;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: transparent;
+}
+#formSec .container .row .MyForm input[required], #formSec .container .row .MyForm textarea[required] {
+  border-color: rgb(5, 163, 29);
+}
+#formSec .container .row .MyForm input::placeholder, #formSec .container .row .MyForm textarea::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required]::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required] {
+  border-color: #3DB554;
+}
+#formSec .container .row textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: transparent;
+}
+#formSec .container .row .formbtn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#formSec .container .row .formbtn button {
+  padding: 15px 10px 15px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#formSec .container .row .formbtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+#formSec .container .MyForm:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#formSec .container .MyForm:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#formSec .container p {
+  padding-top: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .row .formbtn button {
+    width: 60% !important;
+    font-size: 7px;
+    padding: 5px 5px 5px 5px !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .MyForm input {
+    width: 90% !important;
+    font-size: 10px;
+  }
+  .row .MyForm textarea {
+    width: 90% !important;
+    font-size: 10px;
+  }
+}
+#appsMoreHelp {
+  width: 100%;
+}
+#appsMoreHelp .container .row .more h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .more p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .more a {
+  text-decoration: none;
+  color: inherit;
+}
+#appsMoreHelp .container .row .more .more a:hover {
+  text-decoration: underline;
+}
+#appsMoreHelp .container .row .helps h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .helps p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .helps a {
+  text-decoration: none;
+  color: inherit;
+}
+#appsMoreHelp .container .row .helps .more a:hover {
+  text-decoration: underline;
+}
+#appsMoreHelp .container .row .icon {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#appsMoreHelp .container .row .icon i {
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .icon a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #F6F7F8;
+}
+footer .container .row .footerRow ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+@media only screen and (max-width: 660px) {
+  .row .footerRow ul li {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .footerAkurlee p {
+    font-size: 11px;
+  }
+  .row .footerAkurlee span {
+    font-size: 11px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .collapseDiv ul {
+  margin: auto;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+header .collapseDiv a:hover {
+  color: #3DB554;
+}
+
+#formSec {
+  width: 100%;
+  background-image: url(/img/help-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#formSec .container .row .formrow {
+  text-align: center;
+  padding: 30px;
+}
+#formSec .container .row .formrow h1 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+}
+#formSec .container .row .formrow h5 {
+  color: white;
+  font-weight: 400;
+}
+#formSec .container .row .MyForm {
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid rgb(255, 136, 0);
+  padding-top: 20px;
+  width: 40%;
+  margin: auto;
+  transition: transform 0.3s ease, scale 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+#formSec .container .row .MyForm #contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#formSec .container .row .MyForm input {
+  padding: 5px;
+  outline: none;
+  height: 35px;
+  width: auto;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: transparent;
+}
+#formSec .container .row .MyForm input[required], #formSec .container .row .MyForm textarea[required] {
+  border-color: rgb(5, 163, 29);
+}
+#formSec .container .row .MyForm input::placeholder, #formSec .container .row .MyForm textarea::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required]::placeholder {
+  color: white;
+}
+#formSec .container .row .MyForm input[required] {
+  border-color: #3DB554;
+}
+#formSec .container .row textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid green;
+  background-color: transparent;
+}
+#formSec .container .row .formbtn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#formSec .container .row .formbtn button {
+  padding: 15px 10px 15px 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #3DB554;
+  box-shadow: 0 0 25px #3DB554;
+  color: white;
+  font-weight: 500;
+}
+#formSec .container .row .formbtn button:hover {
+  box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
+  transition: 0.2s;
+}
+#formSec .container .MyForm:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#formSec .container .MyForm:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#formSec .container p {
+  padding-top: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .row .formbtn button {
+    width: 60% !important;
+    font-size: 7px;
+    padding: 5px 5px 5px 5px !important;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .MyForm input {
+    width: 90% !important;
+    font-size: 10px;
+  }
+  .row .MyForm textarea {
+    width: 90% !important;
+    font-size: 10px;
+  }
+}
+#appsMoreHelp {
+  width: 100%;
+}
+#appsMoreHelp .container .row .more h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .more p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .more a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+#appsMoreHelp .container .row .more .more a:hover {
+  text-decoration: underline;
+  /* Hover durumunda alt çizgiyi ekler */
+}
+#appsMoreHelp .container .row .helps h5 {
+  color: #3DB554;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .helps p {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+#appsMoreHelp .container .row .helps a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+#appsMoreHelp .container .row .helps .more a:hover {
+  text-decoration: underline;
+  /* Hover durumunda alt çizgiyi ekler */
+}
+#appsMoreHelp .container .row .icon {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* İkonları yatayda hizala */
+  gap: 20px;
+}
+#appsMoreHelp .container .row .icon i {
+  padding-bottom: 20px;
+}
+#appsMoreHelp .container .row .icon a {
+  text-decoration: none;
+  /* Alt çizgiyi kaldır */
+  color: inherit;
+  /* Bağlantının rengini miras al */
+}
+
+footer {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #F6F7F8;
+}
+footer .container .row .footerRow ul {
+  list-style: none;
+  /* Liste işaretini kaldır */
+  padding: 0;
+  /* Liste içi boşluğu sıfırla */
+  margin: 0;
+  /* Liste kenar boşluğunu sıfırla */
+  display: flex;
+  /* Liste öğelerini yan yana sırala */
+  gap: 25px;
+}
+
+@media only screen and (max-width: 660px) {
+  .row .footerRow ul li {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .row .footerAkurlee p {
+    font-size: 11px;
+  }
+  .row .footerAkurlee span {
+    font-size: 11px;
+  }
 }

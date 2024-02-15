@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     width: 100%;
 
@@ -15,230 +21,47 @@ header {
     a:hover{
         color: #3DB554;
     }
-
-   
-
-
-   
-}
     }
+}
 
 
-
-
-#pricing{
+#getInTouch{
     width: 100%;
+    padding-bottom: 30px;
     .container{
         .row{
-            .pricingText{
-                text-align: center;
-                padding-top: 30px;
-                h3{
-                    color: #3DB554;
-                    font-weight: 400;
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                }
-                p{
-                    padding-top: 10px;
-                    color: rgb(116, 115, 115);
-                }
-                
+
+        .getintouchText{
+            padding-top: 30px;
+           h1{
+            color: #3DB554;
+            
+           } 
+           .getmessage{
+          display: flex;
+          flex-direction: column;
+          p{
+            color: #33495C;
+            font-weight: 700;
+            padding-top: 10px;
+          }
+          span{
+            color: grey;
+            font-weight: 300;
+          }
+         }
+        
+           }
+        }
+        .getintouchImg{
+            padding-top: 30px;
+            img{
+                max-width: 100%;
             }
-
-            .pricingRow{
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                img{
-                    max-width: 15%;
-                    padding-top: 30px;
-                    padding-bottom: 20px;
-                    
-                }
-                h4{
-                    color: rgb(74, 74, 74);
-                    text-align: center;
-                    padding-bottom: 15px;
-                }
-               
-              h3{
-                color: #3DB554;
-                font-weight: 700;
-                padding-top: 15px;
-              }
-              span{
-               
-                color: grey;
-                font-weight: 700;
-              }
-              h6{
-                color:grey;
-                font-weight: 700;
-            }
-              code{
-                color: #3DB554;
-              }
-              .pricingBtn {
-                padding-top: 30px;
-                padding-bottom: 20px;
-
-                text-align: center;
-
-                button {
-
-                    padding: 10px 10px 10px 10px;
-                    border: none;
-                    border-radius: 30px;
-                    background-color: #3DB554;
-                    box-shadow: 0 0 25px #3DB554;
-font-size: 13px;
-                    color: white;
-                    font-weight: 500;
-
-                }
-
-                button:hover {
-                    box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
-                    transition: 0.2s;
-                }
-            }
-            }
-
-
-            .pricingtxt{
-                padding: 20px;
-                border: 1px solid #3DB554;
-                .pricingh6{
-                    padding-top: 20px;
-                    border: 1px solid #3DB554;
-                
-                    padding: 20px;
-                    color: grey;
-                    text-align: center;
-                }
-                p{
-                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                }
-            }
-
-
-
-
+           
+        }
         }
     }
-}
-
-
-
-
-#compare{
-    width: 100%;
-    .container{
-        .row{
-            .compareText{
-                text-align: center;
-                padding-top: 30px;
-                h1{
-                    color: #3DB554;
-                    font-weight: 600;
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                }
-                p{
-                    padding-top: 15px;
-                    color: grey;
-                }
-                .compareBtn {
-                    padding-top: 30px;
-                    padding-bottom: 20px;
-    
-                    text-align: center;
-    
-                    button {
-    
-                        padding: 10px 10px 10px 10px;
-                        border: none;
-                        border-radius: 30px;
-                        background-color: #3DB554;
-                        box-shadow: 0 0 25px #3DB554;
-    font-size: 13px;
-                        color: white;
-                        font-weight: 500;
-    
-                    }
-    
-                    button:hover {
-                        box-shadow: 0 0 5px #3DB554, 0 0 50px #3DB554;
-                        transition: 0.2s;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-    #roomVayfinder{
-        width: 100%;
-        background-color: #F6F7F8;
-        padding-top: 30px;
-        .container{
-            .row{
-                .vayfinderImg{
-                    padding-top: 30px;
-                    
-                    img{
-                        max-width: 100%;
-                    }
-                }
-                .vayfinderText{
-                  
-                    
-                        h3{
-                            color: #3DB554;
-                            padding-bottom: 20px;
-                        }
-                      
-                    
-                    p{
-                        color: grey;
-                    }
-                        h6{
-                            padding-top: 10px;
-                            color: rgb(255, 136, 0);
-                            font-weight: 200;
-                            padding-bottom: 10px;
-                        }
-                    
-                }
-                .vayFinderbtn{
-                    
-                    padding-top: 25px;
-                    padding-bottom: 30px;
-                    button {
-    
-                        padding: 10px 10px 10px 10px;
-                        border: none;
-                        border-radius: 30px;
-                        background-color: rgb(255, 136, 0);
-                        box-shadow: 0 0 25px  rgb(255, 136, 0);
-                        font-size: 13px;
-                        color: white;
-                        font-weight: 500;
-    
-                    }
-    
-                    button:hover {
-                        box-shadow: 0 0 5px  rgb(255, 136, 0), 0 0 50px rgb(255, 136, 0);
-                        transition: 0.2s;
-                    }
-                }
-            }
-        }
-    }
-    
-    
-
-
 
 
 
@@ -428,14 +251,14 @@ font-size: 13px;
     
                     a {
                         text-decoration: none;
-                        /* Alt çizgiyi kaldır */
+                      
                         color: inherit;
-                        /* Bağlantının rengini miras al */
+                       
                     }
     
                     .more a:hover {
                         text-decoration: underline;
-                        /* Hover durumunda alt çizgiyi ekler */
+                       
                     }
     
                 }
@@ -456,14 +279,14 @@ font-size: 13px;
     
                     a {
                         text-decoration: none;
-                        /* Alt çizgiyi kaldır */
+                        
                         color: inherit;
-                        /* Bağlantının rengini miras al */
+                       
                     }
     
                     .more a:hover {
                         text-decoration: underline;
-                        /* Hover durumunda alt çizgiyi ekler */
+                       
                     }
                 }
     
@@ -472,7 +295,7 @@ font-size: 13px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    /* İkonları yatayda hizala */
+                   
                     gap: 20px;
     
                     i {
@@ -482,9 +305,9 @@ font-size: 13px;
     
                     a {
                         text-decoration: none;
-                        /* Alt çizgiyi kaldır */
+                       
                         color: inherit;
-                        /* Bağlantının rengini miras al */
+                       
                     }
     
                 }
@@ -508,13 +331,13 @@ font-size: 13px;
         .row{
             .footerRow ul{
                 list-style: none;
-                /* Liste işaretini kaldır */
+                
                 padding: 0;
-                /* Liste içi boşluğu sıfırla */
+               
                 margin: 0;
-                /* Liste kenar boşluğunu sıfırla */
+              
                 display: flex;
-                /* Liste öğelerini yan yana sırala */
+              
                 gap: 25px;
             }
         }
@@ -552,4 +375,3 @@ font-size: 13px;
     
         }
       
-    

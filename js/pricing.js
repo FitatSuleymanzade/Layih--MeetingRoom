@@ -1,80 +1,48 @@
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all learn more buttons
+    const learnMoreButtons = document.querySelectorAll('.learn-more-btn');
 
-document.addEventListener("DOMContentLoaded", function () {
-  
-    var meetingImg = document.querySelector(".meetingImg");
-    var imgElement = meetingImg.querySelector("img");
-
- 
-    var initialPosition = -imgElement.clientWidth / 6;
-
-  
-    imgElement.style.transform = "translateX(" + initialPosition + "px)";
-
-    
-    setTimeout(function() {
-        imgElement.style.transform = "translateX(0)";
-    }, 700); 
-});
-
-
-
-
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  
-    var imgElements = document.querySelectorAll(".workplaceImg img");
-
-  
-    imgElements.forEach(function(imgElement) {
-        imgElement.addEventListener("mouseover", function() {
-        
-            imgElement.style.transform = "translateY(-10px)";
-        });
-
-        imgElement.addEventListener("mouseout", function() {
-         
-            imgElement.style.transform = "translateY(0)";
+    // Attach click event listener to each learn more button
+    learnMoreButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            // Get data from the API
+            fetchDataFromAPI(this);
         });
     });
+
+    function fetchDataFromAPI(button) {
+        // You can replace the URL with your actual API endpoint
+        const apiUrl = 'http://localhost:3000/posts'; // Replace with your API URL
+
+        // Assuming you are using the fetch API
+        fetch(apiUrl, {
+            method: 'POST', // Change this to POST
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ buttonId: button.id }), // Adjust the data you want to send
+        })
+            .then(response => response.json())
+            .then(data => {
+                // Process the data as needed
+
+                // For demonstration, log the data to the console
+                console.log(data);
+
+                // Navigate to wishlist.html or update the page accordingly
+                navigateToWishlistPage(data);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    }
+
+    function navigateToWishlistPage(data) {
+        // Assuming you want to pass the data to wishlist.html
+        // You can update this part based on your project structure
+        window.location.href = 'wishlist.html'; // Replace with your actual URL
+    }
 });
-
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  
-    var imgElements = document.querySelectorAll(".meetingRow img");
-
-    
-    imgElements.forEach(function(imgElement) {
-        imgElement.addEventListener("mouseenter", function() {
-       
-            imgElement.style.transform = "translateX(-9px)";
-        });
-
-        imgElement.addEventListener("mouseleave", function() {
-            
-            imgElement.style.transform = "translateX(0)";
-        });
-    });
-});
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -124,21 +92,3 @@ document.getElementById('sendMessage').addEventListener('click', function () {
         alert('Zəhmət olmasa xanaları doldurun');
     }
 });
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
